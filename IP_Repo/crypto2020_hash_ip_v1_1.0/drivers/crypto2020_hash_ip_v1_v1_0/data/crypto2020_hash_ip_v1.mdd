@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER crypto2020_hash_ip_v1
+	OPTION supported_peripherals = (crypto2020_hash_ip_v1);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = crypto2020_hash_ip_v1;
+END DRIVER

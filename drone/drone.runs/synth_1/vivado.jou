@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 20 14:52:07 2021
+# Process ID: 32140
+# Current directory: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1
+# Command line: vivado -log drone_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source drone_wrapper.tcl
+# Log file: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/drone_wrapper.vds
+# Journal file: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source drone_wrapper.tcl -notrace

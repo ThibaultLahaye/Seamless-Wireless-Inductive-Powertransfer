@@ -1,0 +1,522 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Apr 20 13:41:51 2021
+# Process ID: 3566
+# Current directory: /users/students/r0713047/Eagle/Eagle7
+# Command line: vivado
+# Log file: /users/students/r0713047/Eagle/Eagle7/vivado.log
+# Journal file: /users/students/r0713047/Eagle/Eagle7/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 6413.199 ; gain = 188.367 ; free physical = 3359 ; free virtual = 38244
+update_compile_order -fileset sources_1
+open_bd_design {/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd}
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- kuleuven.be:user:RC:1.0 - RC_1
+Adding cell -- kuleuven.be:user:RC:1.0 - RC_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_testpins
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_led
+Adding cell -- kuleuven.be:user:kill_switch:1.0 - kill_switch_0
+Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_0
+Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_3
+Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_5
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M
+Adding cell -- user.org:user:crypto2020_hash_ip_v1:1.0 - crypto2020_hash_ip_v1_0
+Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_4
+Adding cell -- user.org:user:SWIPT_2020:1.0 - SWIPT_2020_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK0(clk) and /kill_switch_0/clk(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <drone> from BD file </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6708.383 ; gain = 0.000 ; free physical = 3196 ; free virtual = 38165
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 6708.383 ; gain = 0.000 ; free physical = 3137 ; free virtual = 38141
+update_compile_order -fileset sources_1
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml' ignored by IP packager.
+INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 30 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/Eagle7/IP_Repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+Upgrading '/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd'
+INFO: [IP_Flow 19-3422] Upgraded drone_SWIPT_2020_0_0 (SWIPT_2020_v1.0 1.0) from revision 29 to revision 30
+Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/users/students/r0713047/Eagle/Eagle7/drone/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd]
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/dclk_in have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=drone_processing_system7_0_0_FCLK_CLK0 
+Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd> 
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.v
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/sim/drone.v
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_testpins .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_led .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block kill_switch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block crypto2020_hash_ip_v1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SWIPT_2020_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_8/drone_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m09_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_7/drone_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m07_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_6/drone_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m06_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_5/drone_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_4/drone_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_3/drone_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_2/drone_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_1/drone_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_0/drone_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_9/drone_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone.hwh
+Generated Block Design Tcl file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone_bd.tcl
+Generated Hardware Definition File /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.hwdef
+generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7028.879 ; gain = 0.000 ; free physical = 3030 ; free virtual = 38000
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Apr 20 13:50:59 2021] Launched synth_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/runme.log
+[Tue Apr 20 13:50:59 2021] Launched impl_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:18:37
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279760360A
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279760360A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279760360A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_bd_design {/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml' ignored by IP packager.
+set_property core_revision 31 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/Eagle7/IP_Repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+Upgrading '/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd'
+INFO: [IP_Flow 19-3422] Upgraded drone_SWIPT_2020_0_0 (SWIPT_2020_v1.0 1.0) from revision 30 to revision 31
+Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/users/students/r0713047/Eagle/Eagle7/drone/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd]
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/dclk_in have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=drone_processing_system7_0_0_FCLK_CLK0 
+Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd> 
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.v
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/sim/drone.v
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_testpins .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_led .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block kill_switch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block crypto2020_hash_ip_v1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SWIPT_2020_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_8/drone_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m09_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_7/drone_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m07_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_6/drone_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m06_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_5/drone_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_4/drone_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_3/drone_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_2/drone_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_1/drone_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_0/drone_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_9/drone_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone.hwh
+Generated Block Design Tcl file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone_bd.tcl
+Generated Hardware Definition File /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.hwdef
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7531.648 ; gain = 0.000 ; free physical = 2034 ; free virtual = 37238
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Apr 20 14:09:03 2021] Launched synth_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/runme.log
+[Tue Apr 20 14:09:03 2021] Launched impl_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log
+report_ip_status -name ip_status 
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_bd_design {/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml' ignored by IP packager.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 32 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/Eagle7/IP_Repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+Upgrading '/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd'
+INFO: [IP_Flow 19-3422] Upgraded drone_SWIPT_2020_0_0 (SWIPT_2020_v1.0 1.0) from revision 31 to revision 32
+Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/users/students/r0713047/Eagle/Eagle7/drone/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd]
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/dclk_in have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=drone_processing_system7_0_0_FCLK_CLK0 
+Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd> 
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.v
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/sim/drone.v
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_testpins .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_led .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block kill_switch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block crypto2020_hash_ip_v1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SWIPT_2020_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_8/drone_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m09_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_7/drone_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m07_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_6/drone_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m06_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_5/drone_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_4/drone_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_3/drone_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_2/drone_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_1/drone_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_0/drone_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_9/drone_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone.hwh
+Generated Block Design Tcl file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone_bd.tcl
+Generated Hardware Definition File /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.hwdef
+generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7697.363 ; gain = 0.000 ; free physical = 1739 ; free virtual = 37048
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Apr 20 14:28:11 2021] Launched synth_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/runme.log
+[Tue Apr 20 14:28:11 2021] Launched impl_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_bd_design {/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session
+ipx::merge_project_changes files [ipx::current_core]
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-5226] Project source file '/users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml' ignored by IP packager.
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 33 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/Eagle7/IP_Repo
+INFO: [IP_Flow 19-725] Reloaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Apr 20 14:50:56 2021] Launched impl_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log
+report_ip_status -name ip_status 
+reset_run impl_1 -prev_step 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+Upgrading '/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd'
+INFO: [IP_Flow 19-3422] Upgraded drone_SWIPT_2020_0_0 (SWIPT_2020_v1.0 1.0) from revision 32 to revision 33
+Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to '/users/students/r0713047/Eagle/Eagle7/drone/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd]
+WARNING: [BD 41-927] Following properties on pin /xadc_wiz_0/dclk_in have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=drone_processing_system7_0_0_FCLK_CLK0 
+Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd> 
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.v
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/sim/drone.v
+VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RC_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_testpins .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_led .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block kill_switch_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_processing_system7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block crypto2020_hash_ip_v1_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block PWM_AXI_triple_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block SWIPT_2020_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_8/drone_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m09_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_7/drone_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m07_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_6/drone_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m06_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_5/drone_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_4/drone_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_3/drone_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_2/drone_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_1/drone_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_0/drone_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_9/drone_auto_pc_9_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone.hwh
+Generated Block Design Tcl file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone_bd.tcl
+Generated Hardware Definition File /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.hwdef
+generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7802.555 ; gain = 0.000 ; free physical = 1588 ; free virtual = 36837
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Tue Apr 20 14:52:06 2021] Launched synth_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/runme.log
+[Tue Apr 20 14:52:06 2021] Launched impl_1...
+Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log

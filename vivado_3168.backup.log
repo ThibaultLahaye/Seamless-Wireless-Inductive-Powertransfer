@@ -1,0 +1,170 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Apr 19 15:07:33 2021
+# Process ID: 3168
+# Current directory: /users/students/r0713047/Eagle/Eagle7
+# Command line: vivado
+# Log file: /users/students/r0713047/Eagle/Eagle7/vivado.log
+# Journal file: /users/students/r0713047/Eagle/Eagle7/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /users/students/r0713047/Eagle/Eagle7/drone.tcl
+# set origin_dir "."
+# if { [info exists ::origin_dir_loc] } {
+#   set origin_dir $::origin_dir_loc
+# }
+# variable script_file
+# set script_file "drone.tcl"
+# proc help {} {
+#   variable script_file
+#   puts "\nDescription:"
+#   puts "Recreate a Vivado project from this script. The created project will be"
+#   puts "functionally equivalent to the original project for which this script was"
+#   puts "generated. The script contains commands for creating a project, filesets,"
+#   puts "runs, adding/importing sources and setting properties on various objects.\n"
+#   puts "Syntax:"
+#   puts "$script_file"
+#   puts "$script_file -tclargs \[--origin_dir <path>\]"
+#   puts "$script_file -tclargs \[--help\]\n"
+#   puts "Usage:"
+#   puts "Name                   Description"
+#   puts "-------------------------------------------------------------------------"
+#   puts "\[--origin_dir <path>\]  Determine source file paths wrt this path. Default"
+#   puts "                       origin_dir path value is \".\", otherwise, the value"
+#   puts "                       that was set with the \"-paths_relative_to\" switch"
+#   puts "                       when this script was generated.\n"
+#   puts "\[--help\]               Print help information for this script"
+#   puts "-------------------------------------------------------------------------\n"
+#   exit 0
+# }
+# if { $::argc > 0 } {
+#   for {set i 0} {$i < [llength $::argc]} {incr i} {
+#     set option [string trim [lindex $::argv $i]]
+#     switch -regexp -- $option {
+#       "--origin_dir" { incr i; set origin_dir [lindex $::argv $i] }
+#       "--help"       { help }
+#       default {
+#         if { [regexp {^-} $option] } {
+#           puts "ERROR: Unknown option '$option' specified, please type '$script_file -tclargs --help' for usage info.\n"
+#           return 1
+#         }
+#       }
+#     }
+#   }
+# }
+# create_project drone ./drone -part xc7z010clg400-1
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.runs
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.sim
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.cache
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.hw
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files
+source /users/students/r0713047/Eagle/Eagle7/drone.tcl
+# set origin_dir "."
+# if { [info exists ::origin_dir_loc] } {
+#   set origin_dir $::origin_dir_loc
+# }
+# variable script_file
+# set script_file "drone.tcl"
+# proc help {} {
+#   variable script_file
+#   puts "\nDescription:"
+#   puts "Recreate a Vivado project from this script. The created project will be"
+#   puts "functionally equivalent to the original project for which this script was"
+#   puts "generated. The script contains commands for creating a project, filesets,"
+#   puts "runs, adding/importing sources and setting properties on various objects.\n"
+#   puts "Syntax:"
+#   puts "$script_file"
+#   puts "$script_file -tclargs \[--origin_dir <path>\]"
+#   puts "$script_file -tclargs \[--help\]\n"
+#   puts "Usage:"
+#   puts "Name                   Description"
+#   puts "-------------------------------------------------------------------------"
+#   puts "\[--origin_dir <path>\]  Determine source file paths wrt this path. Default"
+#   puts "                       origin_dir path value is \".\", otherwise, the value"
+#   puts "                       that was set with the \"-paths_relative_to\" switch"
+#   puts "                       when this script was generated.\n"
+#   puts "\[--help\]               Print help information for this script"
+#   puts "-------------------------------------------------------------------------\n"
+#   exit 0
+# }
+# if { $::argc > 0 } {
+#   for {set i 0} {$i < [llength $::argc]} {incr i} {
+#     set option [string trim [lindex $::argv $i]]
+#     switch -regexp -- $option {
+#       "--origin_dir" { incr i; set origin_dir [lindex $::argv $i] }
+#       "--help"       { help }
+#       default {
+#         if { [regexp {^-} $option] } {
+#           puts "ERROR: Unknown option '$option' specified, please type '$script_file -tclargs --help' for usage info.\n"
+#           return 1
+#         }
+#       }
+#     }
+#   }
+# }
+# create_project drone ./drone -part xc7z010clg400-1
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.runs
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.sim
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.cache
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.hw
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files
+source /users/students/r0713047/Eagle/Eagle7/drone.tcl
+# set origin_dir "."
+# if { [info exists ::origin_dir_loc] } {
+#   set origin_dir $::origin_dir_loc
+# }
+# variable script_file
+# set script_file "drone.tcl"
+# proc help {} {
+#   variable script_file
+#   puts "\nDescription:"
+#   puts "Recreate a Vivado project from this script. The created project will be"
+#   puts "functionally equivalent to the original project for which this script was"
+#   puts "generated. The script contains commands for creating a project, filesets,"
+#   puts "runs, adding/importing sources and setting properties on various objects.\n"
+#   puts "Syntax:"
+#   puts "$script_file"
+#   puts "$script_file -tclargs \[--origin_dir <path>\]"
+#   puts "$script_file -tclargs \[--help\]\n"
+#   puts "Usage:"
+#   puts "Name                   Description"
+#   puts "-------------------------------------------------------------------------"
+#   puts "\[--origin_dir <path>\]  Determine source file paths wrt this path. Default"
+#   puts "                       origin_dir path value is \".\", otherwise, the value"
+#   puts "                       that was set with the \"-paths_relative_to\" switch"
+#   puts "                       when this script was generated.\n"
+#   puts "\[--help\]               Print help information for this script"
+#   puts "-------------------------------------------------------------------------\n"
+#   exit 0
+# }
+# if { $::argc > 0 } {
+#   for {set i 0} {$i < [llength $::argc]} {incr i} {
+#     set option [string trim [lindex $::argv $i]]
+#     switch -regexp -- $option {
+#       "--origin_dir" { incr i; set origin_dir [lindex $::argv $i] }
+#       "--help"       { help }
+#       default {
+#         if { [regexp {^-} $option] } {
+#           puts "ERROR: Unknown option '$option' specified, please type '$script_file -tclargs --help' for usage info.\n"
+#           return 1
+#         }
+#       }
+#     }
+#   }
+# }
+# create_project drone ./drone -part xc7z010clg400-1
+ERROR: [Common 17-53] User Exception: Project already exists on disk, please use '-force' option to overwrite: 
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.runs
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.sim
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.cache
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.hw
+     /users/students/r0713047/Eagle/Eagle7/drone/drone.ip_user_files
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 19 15:10:36 2021...

@@ -1,0 +1,567 @@
+
+*** Running vivado
+    with args -log drone_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source drone_wrapper.tcl -notrace
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source drone_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'.
+Command: link_design -top drone_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 705 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc] for cell 'drone_i/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.389970 which will be rounded to 0.390 to ensure it is an integer multiple of 1 picosecond [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc:24]
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc] for cell 'drone_i/processing_system7_0/inst'
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0_board.xdc] for cell 'drone_i/axi_gpio_testpins/U0'
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0_board.xdc] for cell 'drone_i/axi_gpio_testpins/U0'
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0.xdc] for cell 'drone_i/axi_gpio_testpins/U0'
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0.xdc] for cell 'drone_i/axi_gpio_testpins/U0'
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0_board.xdc] for cell 'drone_i/axi_gpio_led/U0'
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0_board.xdc] for cell 'drone_i/axi_gpio_led/U0'
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0.xdc] for cell 'drone_i/axi_gpio_led/U0'
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0.xdc] for cell 'drone_i/axi_gpio_led/U0'
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0_board.xdc] for cell 'drone_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0_board.xdc] for cell 'drone_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0.xdc] for cell 'drone_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0.xdc] for cell 'drone_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0.xdc] for cell 'drone_i/xadc_wiz_0/inst'
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0.xdc] for cell 'drone_i/xadc_wiz_0/inst'
+Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/constraints/ZYBO_Master_2018.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance ADC_inn_6_IBUF_inst at K14 (IOB_X0Y60) since it belongs to a shape containing instance drone_i/xadc_wiz_0/inst. The shape requires relative placement between ADC_inn_6_IBUF_inst and drone_i/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for drone_i/xadc_wiz_0/inst. [/users/students/r0713047/Eagle/Eagle7/constraints/ZYBO_Master_2018.xdc:462]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance ADC_inp_6_IBUF_inst at J14 (IOB_X0Y59) since it belongs to a shape containing instance drone_i/xadc_wiz_0/inst. The shape requires relative placement between ADC_inp_6_IBUF_inst and drone_i/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for drone_i/xadc_wiz_0/inst. [/users/students/r0713047/Eagle/Eagle7/constraints/ZYBO_Master_2018.xdc:463]
+Finished Parsing XDC File [/users/students/r0713047/Eagle/Eagle7/constraints/ZYBO_Master_2018.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+10 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:25 . Memory (MB): peak = 2103.637 ; gain = 612.402 ; free physical = 2237 ; free virtual = 37330
+Command: opt_design -directive RuntimeOptimized
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2103.637 ; gain = 0.000 ; free physical = 2232 ; free virtual = 37325
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 100 inverter(s) to 107 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 291f89f9f
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:18 . Memory (MB): peak = 2337.086 ; gain = 233.449 ; free physical = 1834 ; free virtual = 36943
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 8 load pin(s).
+Phase 2 Constant propagation | Checksum: 2578ef56d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 2337.086 ; gain = 233.449 ; free physical = 1834 ; free virtual = 36943
+INFO: [Opt 31-389] Phase Constant propagation created 178 cells and removed 866 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 24c24cffd
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2337.086 ; gain = 233.449 ; free physical = 1832 ; free virtual = 36941
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 3667 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 24c24cffd
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2337.086 ; gain = 233.449 ; free physical = 1832 ; free virtual = 36941
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 1dd9e3cbe
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2337.086 ; gain = 233.449 ; free physical = 1833 ; free virtual = 36942
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 25898a864
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2337.086 ; gain = 233.449 ; free physical = 1833 ; free virtual = 36942
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2337.086 ; gain = 0.000 ; free physical = 1833 ; free virtual = 36942
+Ending Logic Optimization Task | Checksum: 25898a864
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 2337.086 ; gain = 233.449 ; free physical = 1833 ; free virtual = 36942
+INFO: [Common 17-83] Releasing license: Implementation
+26 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 2337.086 ; gain = 233.449 ; free physical = 1833 ; free virtual = 36942
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2369.102 ; gain = 0.000 ; free physical = 1823 ; free virtual = 36935
+INFO: [Common 17-1381] The checkpoint '/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file drone_wrapper_drc_opted.rpt -pb drone_wrapper_drc_opted.pb -rpx drone_wrapper_drc_opted.rpx
+Command: report_drc -file drone_wrapper_drc_opted.rpt -pb drone_wrapper_drc_opted.pb -rpx drone_wrapper_drc_opted.rpx
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive ExtraTimingOpt
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'ExtraTimingOpt' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1813 ; free virtual = 36926
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 174b64d6e
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1813 ; free virtual = 36926
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1813 ; free virtual = 36926
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 112f2d827
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1797 ; free virtual = 36913
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1adc6f408
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1765 ; free virtual = 36882
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1adc6f408
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1765 ; free virtual = 36882
+Phase 1 Placer Initialization | Checksum: 1adc6f408
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1765 ; free virtual = 36882
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 2229def6d
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1753 ; free virtual = 36871
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1748 ; free virtual = 36866
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+|  Optimization       |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 26510f1a3
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1748 ; free virtual = 36867
+Phase 2 Global Placement | Checksum: 1ce2ee997
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1751 ; free virtual = 36870
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1ce2ee997
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1751 ; free virtual = 36870
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 197fe89b5
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1747 ; free virtual = 36866
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1cc436f5f
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1747 ; free virtual = 36866
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: f370f449
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1747 ; free virtual = 36866
+
+Phase 3.5 Timing Path Optimizer
+Phase 3.5 Timing Path Optimizer | Checksum: f370f449
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1747 ; free virtual = 36866
+
+Phase 3.6 Fast Optimization
+Phase 3.6 Fast Optimization | Checksum: fd6a4229
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:10 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1746 ; free virtual = 36865
+
+Phase 3.7 Small Shape Detail Placement
+Phase 3.7 Small Shape Detail Placement | Checksum: 27a4cb909
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1737 ; free virtual = 36856
+
+Phase 3.8 Re-assign LUT pins
+Phase 3.8 Re-assign LUT pins | Checksum: 22efe23a4
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1737 ; free virtual = 36857
+
+Phase 3.9 Pipeline Register Optimization
+Phase 3.9 Pipeline Register Optimization | Checksum: 22efe23a4
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1737 ; free virtual = 36857
+Phase 3 Detail Placement | Checksum: 22efe23a4
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:13 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1737 ; free virtual = 36857
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 16296adc8
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 16296adc8
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1744 ; free virtual = 36863
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.502. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1472f1a6d
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:37 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1741 ; free virtual = 36860
+Phase 4.1 Post Commit Optimization | Checksum: 1472f1a6d
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:37 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1741 ; free virtual = 36860
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1472f1a6d
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:37 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1741 ; free virtual = 36860
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1472f1a6d
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:37 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1741 ; free virtual = 36860
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: cd6161d0
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:37 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1741 ; free virtual = 36860
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: cd6161d0
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:37 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1741 ; free virtual = 36860
+Ending Placer Task | Checksum: b2a1ab14
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:37 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1750 ; free virtual = 36869
+INFO: [Common 17-83] Releasing license: Implementation
+48 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:49 ; elapsed = 00:00:39 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1750 ; free virtual = 36869
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.82 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1711 ; free virtual = 36854
+INFO: [Common 17-1381] The checkpoint '/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file drone_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1706 ; free virtual = 36832
+INFO: [runtcl-4] Executing : report_utilization -file drone_wrapper_utilization_placed.rpt -pb drone_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1714 ; free virtual = 36840
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file drone_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2425.129 ; gain = 0.000 ; free physical = 1713 ; free virtual = 36839
+Command: route_design -directive NoTimingRelaxation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'NoTimingRelaxation'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+Checksum: PlaceDB: 9d5f51b1 ConstDB: 0 ShapeSum: 15425963 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 431a137c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2459.750 ; gain = 34.621 ; free physical = 1660 ; free virtual = 36786
+Post Restoration Checksum: NetGraph: 32ef9758 NumContArr: 102a7c24 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 431a137c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2459.750 ; gain = 34.621 ; free physical = 1661 ; free virtual = 36788
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 431a137c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2473.750 ; gain = 48.621 ; free physical = 1646 ; free virtual = 36773
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 431a137c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2473.750 ; gain = 48.621 ; free physical = 1646 ; free virtual = 36773
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1c2761008
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1630 ; free virtual = 36757
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.559  | TNS=0.000  | WHS=-0.192 | THS=-162.363|
+
+Phase 2 Router Initialization | Checksum: 2830e8dbf
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1627 ; free virtual = 36754
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1b0af5474
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1629 ; free virtual = 36756
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1768
+ Number of Nodes with overlaps = 681
+ Number of Nodes with overlaps = 390
+ Number of Nodes with overlaps = 149
+ Number of Nodes with overlaps = 58
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 43
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.038  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: a9f94e7c
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:23 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1628 ; free virtual = 36754
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 95
+ Number of Nodes with overlaps = 63
+ Number of Nodes with overlaps = 34
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 6
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.214  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 11d1a00c8
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+Phase 4 Rip-up And Reroute | Checksum: 11d1a00c8
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 11d1a00c8
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 11d1a00c8
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+Phase 5 Delay and Skew Optimization | Checksum: 11d1a00c8
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: f5d0600d
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.329  | TNS=0.000  | WHS=0.018  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 16cabd49b
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+Phase 6 Post Hold Fix | Checksum: 16cabd49b
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 7.73592 %
+  Global Horizontal Routing Utilization  = 8.00414 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: e7e16db0
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1610 ; free virtual = 36736
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: e7e16db0
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:33 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1609 ; free virtual = 36735
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: bcc84487
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:34 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1611 ; free virtual = 36737
+
+Phase 10 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.334  | TNS=0.000  | WHS=0.020  | THS=0.000  |
+
+INFO: [Route 35-61] The design met the timing requirement.
+Phase 10 Post Router Timing | Checksum: 11401d27e
+
+Time (s): cpu = 00:01:16 ; elapsed = 00:00:35 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1624 ; free virtual = 36750
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:35 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1678 ; free virtual = 36803
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+67 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:20 ; elapsed = 00:00:37 . Memory (MB): peak = 2492.812 ; gain = 67.684 ; free physical = 1678 ; free virtual = 36803
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.81 . Memory (MB): peak = 2498.812 ; gain = 0.000 ; free physical = 1644 ; free virtual = 36798
+INFO: [Common 17-1381] The checkpoint '/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file drone_wrapper_drc_routed.rpt -pb drone_wrapper_drc_routed.pb -rpx drone_wrapper_drc_routed.rpx
+Command: report_drc -file drone_wrapper_drc_routed.rpt -pb drone_wrapper_drc_routed.pb -rpx drone_wrapper_drc_routed.rpx
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file drone_wrapper_methodology_drc_routed.rpt -pb drone_wrapper_methodology_drc_routed.pb -rpx drone_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file drone_wrapper_methodology_drc_routed.rpt -pb drone_wrapper_methodology_drc_routed.pb -rpx drone_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file drone_wrapper_power_routed.rpt -pb drone_wrapper_power_summary_routed.pb -rpx drone_wrapper_power_routed.rpx
+Command: report_power -file drone_wrapper_power_routed.rpt -pb drone_wrapper_power_summary_routed.pb -rpx drone_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+79 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file drone_wrapper_route_status.rpt -pb drone_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file drone_wrapper_timing_summary_routed.rpt -pb drone_wrapper_timing_summary_routed.pb -rpx drone_wrapper_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file drone_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file drone_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file drone_wrapper_bus_skew_routed.rpt -pb drone_wrapper_bus_skew_routed.pb -rpx drone_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+Command: phys_opt_design -directive AddRetime
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: AddRetime
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+95 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.89 . Memory (MB): peak = 2572.895 ; gain = 0.000 ; free physical = 1538 ; free virtual = 36709
+INFO: [Common 17-1381] The checkpoint '/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper_postroute_physopt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file drone_wrapper_timing_summary_postroute_physopted.rpt -pb drone_wrapper_timing_summary_postroute_physopted.pb -rpx drone_wrapper_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file drone_wrapper_bus_skew_postroute_physopted.rpt -pb drone_wrapper_bus_skew_postroute_physopted.pb -rpx drone_wrapper_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max, Timing Stage: Requireds.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+Command: write_bitstream -force drone_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 4 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./drone_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-118] WebTalk data collection is enabled (User setting is ON. Install Setting is ON.).
+INFO: [Common 17-83] Releasing license: Implementation
+111 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:02:21 . Memory (MB): peak = 2885.367 ; gain = 312.473 ; free physical = 1516 ; free virtual = 36677
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 20 13:58:55 2021...

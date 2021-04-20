@@ -1,0 +1,2362 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:02:38 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 3566
+License: Customer
+
+Current time: 	Tue Apr 20 13:42:15 CEST 2021
+Time zone: 	Central European Time (Europe/Brussels)
+
+OS: CentOS Linux release 8.3.2011
+OS Version: 4.18.0-240.22.1.el8_3.x86_64
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :1
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 48 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/tps/lnx64/jre
+Java executable location: 	/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	r0713047
+User home directory: /users/students/r0713047
+User working directory: /users/students/r0713047/Eagle/Eagle7
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado
+HDI_APPROOT: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2
+RDI_DATADIR: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data
+RDI_BINDIR: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/bin
+
+Vivado preferences file location: /users/students/r0713047/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /users/students/r0713047/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /users/students/r0713047/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	/users/students/r0713047/Eagle/Eagle7/vivado.log
+Vivado journal file location: 	/users/students/r0713047/Eagle/Eagle7/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-3566-pc-klas6-7.esat.kuleuven.be
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@licserv
+XILINX_DSP: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2
+XILINX_SDK: /esat/micas-data/software/xilinx_vivado_2018.2/SDK/2018.2
+XILINX_VIVADO: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2
+XILINX_VIVADO_HLS: /esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2
+
+
+GUI allocated memory:	191 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 850 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 63 MB (+63889kb) [00:00:07]
+// [Engine Memory]: 850 MB (+739600kb) [00:00:07]
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/users/students/r0713047/Eagle/Eagle7/drone/drone.xpr", 0); // q (O, ck)
+// Opening Vivado Project: /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 873 MB. GUI used memory: 36 MB. Current time: 4/20/21 1:42:17 PM CEST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 922 MB (+31175kb) [00:00:13]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,028 MB (+62682kb) [00:00:20]
+// [GUI Memory]: 68 MB (+1273kb) [00:00:22]
+// Tcl Message: open_project /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'. 
+// Project name: drone; location: /users/students/r0713047/Eagle/Eagle7/drone; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 6413.199 ; gain = 188.367 ; free physical = 3359 ; free virtual = 38244 
+// Elapsed time: 14 seconds
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,106 MB. GUI used memory: 46 MB. Current time: 4/20/21 1:42:32 PM CEST
+// [Engine Memory]: 1,106 MB (+27651kb) [00:00:26]
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, ck)
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci)]", 10); // B (D, ck)
+// A (ck): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // A (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,194 MB (+34619kb) [00:00:41]
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v)]", 11); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 14, true); // B (D, ck) - Node
+// [GUI Memory]: 71 MB (+317kb) [00:00:46]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+// [GUI Memory]: 77 MB (+1757kb) [00:01:15]
+// Elapsed time: 33 seconds
+selectCodeEditor("FrequencyTrackerII.v", 177, 288); // D (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 177, 288, false, false, false, false, true); // D (w, ck) - Double Click
+// Elapsed time: 103 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true); // B (D, ck) - Node
+// [GUI Memory]: 83 MB (+2234kb) [00:03:12]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd} 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0 Adding cell -- kuleuven.be:user:RC:1.0 - RC_1 Adding cell -- kuleuven.be:user:RC:1.0 - RC_0 Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_testpins Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_led Adding cell -- kuleuven.be:user:kill_switch:1.0 - kill_switch_0 Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_0 Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_3 Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_5 Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_processing_system7_0_100M 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: Adding cell -- user.org:user:crypto2020_hash_ip_v1:1.0 - crypto2020_hash_ip_v1_0 Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0 Adding cell -- kuleuven.be:user:PWM_AXI_triple:1.0 - PWM_AXI_triple_4 Adding cell -- user.org:user:SWIPT_2020:1.0 - SWIPT_2020_0 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 88 MB (+883kb) [00:03:17]
+// TclEventType: RSB_CONNECTION_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6708.383 ; gain = 0.000 ; free physical = 3196 ; free virtual = 38165 
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_0_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_0_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_4_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_4_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_4_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_4_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_4_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /SWIPT_2020_0_SWIPT_OUT3 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_4_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /SWIPT_2020_0_SWIPT_OUT0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /SWIPT_2020_0_SWIPT_OUT0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_drdy_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_drdy_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_drdy_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_drdy_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_drdy_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_drdy_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /SWIPT_2020_0_SWIPT_OUT0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_do_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_4_PWM_out0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /PWM_AXI_triple_4_PWM_out0 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 655, 50, 1202, 592, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // aa (aj, ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,224 MB. GUI used memory: 54 MB. Current time: 4/20/21 1:45:27 PM CEST
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (ck): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (ck):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 93 MB (+547kb) [00:03:29]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [Engine Memory]: 1,256 MB (+1857kb) [00:03:30]
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 6708.383 ; gain = 0.000 ; free physical = 3137 ; free virtual = 38141 
+// 'i' command handler elapsed time: 6 seconds
+dismissDialog("Edit in IP Packager"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,310 MB. GUI used memory: 69 MB. Current time: 4/20/21 1:45:47 PM CEST
+selectCodeEditor("FrequencyTrackerII.v", 143, 296); // ce (w, ck)
+// Elapsed time: 50 seconds
+selectCodeEditor("FrequencyTrackerII.v", 72, 262); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 84, 269); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 84, 232); // ce (w, ck)
+// [GUI Memory]: 99 MB (+1485kb) [00:05:10]
+// Elapsed time: 38 seconds
+selectCodeEditor("FrequencyTrackerII.v", 66, 459); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 265, 244); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,320 MB (+1266kb) [00:05:29]
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 108 MB (+4874kb) [00:05:43]
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swipt_toplevel.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,331 MB. GUI used memory: 70 MB. Current time: 4/20/21 1:47:57 PM CEST
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swipt_toplevel.v", 3); // k (j, ck)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_EnvelopeFollower : EnvelopeFollower (EnvelopeFollower.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_EnvelopeFollower : EnvelopeFollower (EnvelopeFollower.v)]", 4, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swipt_toplevel.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swipt_toplevel.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+// [GUI Memory]: 115 MB (+1311kb) [00:06:27]
+// Elapsed time: 74 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - SWIPT_2020", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swipt_toplevel.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swipt_toplevel.v", 3); // k (j, ck)
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+selectCodeEditor("FrequencyTrackerII.v", 179, 139); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 367, 138); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - SWIPT_2020", 1); // k (j, ck)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Customization Parameters", 3); // ao (O, ck)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from Customization Parameters Wizard"); // h (M, ck)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes hdl_parameters [ipx::current_core] 
+// Tcl Message: INFO: [IP_Flow 19-3166] Bus Interface 'S00_AXI': References existing memory map 'S00_AXI'. 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao (O, ck)
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (M, ck)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, ck)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 30 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+// bx (ck):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,342 MB. GUI used memory: 76 MB. Current time: 4/20/21 1:50:20 PM CEST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bx (ck)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// Tcl Message: update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/Eagle7/IP_Repo 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo' 
+selectButton(PAResourceQtoS.SystemTab_REPORT_IP_STATUS, "Report IP Status"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_REPORT_IP_STATUS
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// bx (ck):  Report IP Status : addNotify
+// Tcl Message: report_ip_status -name ip_status  
+dismissDialog("Report IP Status"); // bx (ck)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading '/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded drone_SWIPT_2020_0_0 (SWIPT_2020_v1.0 1.0) from revision 29 to revision 30 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to '/users/students/r0713047/Eagle/Eagle7/drone/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet 
+// aI (ck): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (A, G)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectButton("OptionPane.button", "OK"); // JButton (A, H)
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>  
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// [Engine Memory]: 1,390 MB (+4325kb) [00:08:33]
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.v VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/sim/drone.v VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m09_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m07_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m06_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m05_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m04_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m03_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m02_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone.hwh Generated Block Design Tcl file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone_bd.tcl 
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,395 MB. GUI used memory: 73 MB. Current time: 4/20/21 1:50:42 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Hardware Definition File /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 7028.879 ; gain = 0.000 ; free physical = 3030 ; free virtual = 38000 
+// Tcl Message: export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,495 MB (+37364kb) [00:08:39]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cM, ck)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// [GUI Memory]: 122 MB (+1290kb) [00:08:52]
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 20 13:50:59 2021] Launched synth_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/runme.log [Tue Apr 20 13:50:59 2021] Launched impl_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,464 MB. GUI used memory: 70 MB. Current time: 4/20/21 1:51:02 PM CEST
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1009ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// Elapsed time: 356 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 5); // aE (Q, ck)
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 128 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// Elapsed time: 18 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (cM, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_SERVER_UPDATE
+// bx (ck):  Auto Connect : addNotify
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:18:37     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210279760360A 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: current_hw_device [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0). 
+// [Engine Memory]: 2,014 MB (+466343kb) [00:17:23]
+dismissDialog("Auto Connect"); // bx (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 2,015 MB. GUI used memory: 77 MB. Current time: 4/20/21 1:59:32 PM CEST
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 63 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 1); // k (j, ck)
+// Elapsed time: 14 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci)]", 10); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 14); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("FrequencyTrackerII.v", 245, 252); // D (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 245, 252, false, false, false, false, true); // D (w, ck) - Double Click
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_Pwm : Pwm (Pwm.v)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_Pwm : Pwm (Pwm.v)]", 17, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 26 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 1); // k (j, ck)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,036 MB. GUI used memory: 76 MB. Current time: 4/20/21 2:02:32 PM CEST
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210279760360A 
+// n (ck): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 67 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (ck)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// [GUI Memory]: 130 MB (+2206kb) [00:22:11]
+// Elapsed time: 93 seconds
+selectCodeEditor("FrequencyTrackerII.v", 430, 114); // D (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("FrequencyTrackerII.v", 131, 373); // D (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 197, 395); // D (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 162, 349); // D (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd} 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 632, 62, 1202, 592, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // aa (aj, ck)
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // aa (aj, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (ck): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (ck):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 5 seconds
+dismissDialog("Edit in IP Packager"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,107 MB. GUI used memory: 91 MB. Current time: 4/20/21 2:05:47 PM CEST
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 2,115 MB (+269kb) [00:23:41]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3, true); // B (D, ck) - Node
+// TclEventType: DG_ANALYSIS_MSG_RESET
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("FrequencyTrackerII.v", 128, 380); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 113, 84); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 227, 120); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,145 MB. GUI used memory: 93 MB. Current time: 4/20/21 2:06:07 PM CEST
+// Elapsed time: 30 seconds
+selectCodeEditor("FrequencyTrackerII.v", 188, 158); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 188, 158, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,174 MB. GUI used memory: 92 MB. Current time: 4/20/21 2:06:47 PM CEST
+// Elapsed time: 44 seconds
+selectCodeEditor("FrequencyTrackerII.v", 18, 250); // ce (w, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - SWIPT_2020", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 139 MB (+2240kb) [00:25:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 2,191 MB. GUI used memory: 92 MB. Current time: 4/20/21 2:07:27 PM CEST
+// Elapsed time: 18 seconds
+selectCodeEditor("FrequencyTrackerII.v", 19, 318); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 317, 322); // ce (w, ck)
+// Elapsed time: 17 seconds
+selectCodeEditor("FrequencyTrackerII.v", 403, 364); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 352, 365); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 353, 203); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 345, 189); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 474, 155); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 322, 273); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 377, 102); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - SWIPT_2020", 1); // k (j, ck)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ao (O, ck)
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, ck)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao (O, ck)
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, ck)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 31 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bx (ck):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,208 MB. GUI used memory: 93 MB. Current time: 4/20/21 2:08:36 PM CEST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bx (ck)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/Eagle7/IP_Repo 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo' 
+selectButton(PAResourceQtoS.SystemTab_SHOW_IP_STATUS, "Show IP Status"); // h (cM, ck)
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cM, ck)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading '/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded drone_SWIPT_2020_0_0 (SWIPT_2020_v1.0 1.0) from revision 30 to revision 31 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to '/users/students/r0713047/Eagle/Eagle7/drone/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet 
+// aI (ck): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (A, G)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>  VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.v VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/sim/drone.v VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m09_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m07_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m06_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m05_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m04_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m03_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m02_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone.hwh Generated Block Design Tcl file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone_bd.tcl Generated Hardware Definition File /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7531.648 ; gain = 0.000 ; free physical = 2034 ; free virtual = 37238 
+// Tcl Message: export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 20 14:09:03 2021] Launched synth_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/runme.log [Tue Apr 20 14:09:03 2021] Launched impl_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 21 seconds
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cM, ck)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 928ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// [GUI Memory]: 147 MB (+771kb) [00:30:44]
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 484 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 124 seconds
+selectCodeEditor("FrequencyTrackerII.v", 262, 198); // D (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 260, 196); // D (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd} 
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_interconnect_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 648, 52, 1202, 592, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (ck): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (ck):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// [GUI Memory]: 156 MB (+1916kb) [00:37:51]
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 5 seconds
+dismissDialog("Edit in IP Packager"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 0); // B (D, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_EnvelopeFollower : EnvelopeFollower (EnvelopeFollower.v)]", 4, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 19 seconds
+selectCodeEditor("FrequencyTrackerII.v", 174, 176); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 177, 158); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 166 MB (+2930kb) [00:38:24]
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("FrequencyTrackerII.v", 163, 117); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 172, 130); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 254, 260); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 185, 239); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 255, 215); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 184, 304); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 184, 304, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FrequencyTrackerII.v", 168, 297); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 182, 306); // ce (w, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 2,217 MB. GUI used memory: 112 MB. Current time: 4/20/21 2:20:57 PM CEST
+// TclEventType: DG_GRAPH_GENERATED
+// [Engine Memory]: 2,225 MB (+4284kb) [00:38:52]
+// Elapsed time: 30 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 22, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// HOptionPane Warning: 'Hardware Manager cannot be opened for more than one project. Please close Hardware Manager for project 'drone' and try again. (Unable to open Hardware Manager)'
+selectButton("PAResourceOtoP.ProgramDebugTaskView_HARDWARE_MANAGER_CANNOT_BE_OPENED_OK", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session  
+// HOptionPane Error: 'ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session  (Program Device)'
+// 'I' command handler elapsed time: 4 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (A, G)
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21); // u (O, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,243 MB. GUI used memory: 106 MB. Current time: 4/20/21 2:21:47 PM CEST
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session  
+// HOptionPane Error: 'ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session  (Program Device)'
+// 'I' command handler elapsed time: 7 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (A, G)
+// Elapsed time: 34 seconds
+selectCodeEditor("FrequencyTrackerII.v", 179, 22); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 184, 34); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 313, 145); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - SWIPT_2020", 1); // k (j, ck)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ao (O, ck)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, ck)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+selectButton((HResource) null, "Package IP_Group"); // u (f, ck): FALSE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao (O, ck)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (M, ck)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// TclEventType: FILE_SET_CHANGE
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, ck)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 32 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bx (ck):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,252 MB. GUI used memory: 110 MB. Current time: 4/20/21 2:22:58 PM CEST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bx (ck)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/Eagle7/IP_Repo 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo' 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cM, ck)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// Tcl Message: upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log 
+// Tcl Message: Upgrading '/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded drone_SWIPT_2020_0_0 (SWIPT_2020_v1.0 1.0) from revision 31 to revision 32 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to '/users/students/r0713047/Eagle/Eagle7/drone/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet 
+// aI (ck): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (A, G)
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] 
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>  VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.v VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/sim/drone.v VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m09_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m07_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m06_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m05_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m04_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m03_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m02_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone.hwh Generated Block Design Tcl file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone_bd.tcl 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Hardware Definition File /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 7697.363 ; gain = 0.000 ; free physical = 1739 ; free virtual = 37048 
+// Tcl Message: export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 18 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_RESET0_N 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cM, ck)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+selectCodeEditor("FrequencyTrackerII.v", 142, 245); // D (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 197, 228); // D (w, ck)
+// Elapsed time: 70 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // k (j, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+// Elapsed time: 154 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (f)
+// 'cv' command handler elapsed time: 155 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /throttle_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /throttle_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /throttle_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /throttle_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /tuner_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// f (ck): Launch Runs: addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Apr 20 14:28:11 2021] Launched synth_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/runme.log [Tue Apr 20 14:28:11 2021] Launched impl_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 788ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rc_kill_1 
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 468 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // a (Q, ah)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pwm.v", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Pwm.v", 1); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci)]", 10); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 14, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 14, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd), drone (drone.v), SWIPT_2020_0 : drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.xci), drone_SWIPT_2020_0_0 (drone_SWIPT_2020_0_0.v), inst : SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("FrequencyTrackerII.v", 253, 214); // D (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 498, 231); // D (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("FrequencyTrackerII.v", 15, 99); // D (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, drone_wrapper (drone_wrapper.v), drone_i : drone (drone.bd)]", 2, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// bx (ck):  Open Block Design : addNotify
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: open_bd_design {/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd} 
+dismissDialog("Open Block Design"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /rst_processing_system7_0_100M_peripheral_aresetn 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_14_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inp_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /ADC_inn_6_1 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 655, 66, 1202, 592, false, false, false, true, false); // fJ (k, ck) - Popup Trigger
+// [GUI Memory]: 176 MB (+1053kb) [00:55:29]
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+// k (ck): Edit in IP Packager: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (k)
+// bx (ck):  Edit in IP Packager : addNotify
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// 'i' command handler elapsed time: 5 seconds
+dismissDialog("Edit in IP Packager"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 2,350 MB (+13719kb) [00:55:36]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v)]", 3); // B (D, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 2,366 MB. GUI used memory: 121 MB. Current time: 4/20/21 2:37:47 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 5, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SWIPT_2020_v1_0 (SWIPT_2020_v1_0.v), SWIPT_2020_v1_0_S00_AXI_inst : SWIPT_2020_v1_0_S00_AXI (SWIPT_2020_v1_0_S00_AXI.v), swipt_toplevel_inst : swipt_toplevel (swipt_toplevel.v), inst_FrequencyTrackerII : FrequencyTrackerII (FrequencyTrackerII.v)]", 5, false, false, false, false, false, true); // B (D, ck) - Double Click
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_drdy_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /xadc_wiz_0_drdy_out 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /db_port_switch_0_1 
+// Elapsed time: 56 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug]", 19, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROGRAM_DEBUG
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z010_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// Tcl Message: ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session  
+// HOptionPane Error: 'ERROR: [Common 17-70] Application Exception: LTTTHWSessionUtil - null wave manager returned from session  (Program Device)'
+// 'I' command handler elapsed time: 7 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton (A, G)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,387 MB. GUI used memory: 121 MB. Current time: 4/20/21 2:39:02 PM CEST
+// Elapsed time: 10 seconds
+selectCodeEditor("FrequencyTrackerII.v", 121, 472); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 251, 185); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 133, 477); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("FrequencyTrackerII.v", 270, 122); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FrequencyTrackerII.v", 133, 84); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 134, 86, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FrequencyTrackerII.v", 134, 86); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 139, 84); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 120, 235, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("FrequencyTrackerII.v", 20, 161); // ce (w, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectCodeEditor("FrequencyTrackerII.v", 376, 214); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FrequencyTrackerII.v", 116, 399); // ce (w, ck)
+// Elapsed time: 33 seconds
+selectCodeEditor("FrequencyTrackerII.v", 112, 63); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 45, 87); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("FrequencyTrackerII.v", 114, 471); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("FrequencyTrackerII.v", 65, 236); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 130, 422); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 321, 222); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 24, 278); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("FrequencyTrackerII.v", 306, 397); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 12, 71); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 12, 71, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("FrequencyTrackerII.v", 225, 70); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 321, 102); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 118, 305); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 367, 319); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("FrequencyTrackerII.v", 261, 227); // ce (w, ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("FrequencyTrackerII.v", 139, 324); // ce (w, ck)
+// Elapsed time: 340 seconds
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (Q, ck)
+// Elapsed time: 47 seconds
+selectCodeEditor("FrequencyTrackerII.v", 128, 469); // ce (w, ck)
+// Elapsed time: 25 seconds
+selectCodeEditor("FrequencyTrackerII.v", 141, 391); // ce (w, ck)
+selectCodeEditor("FrequencyTrackerII.v", 130, 518); // ce (w, ck)
+// Elapsed time: 70 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - SWIPT_2020", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, ck)
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - SWIPT_2020", 1); // k (j, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "File Groups", 2); // ao (O, ck)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_VIVADO_PROJECT_THAT, "Merge changes from File Groups Wizard"); // h (M, ck)
+// TclEventType: PACKAGER_COMPONENT_RESET
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: ipx::merge_project_changes files [ipx::current_core] 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "FrequencyTrackerII.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Package IP - SWIPT_2020", 1); // k (j, ck)
+selectList(PAResourceOtoP.PackagerStepsPanel_PACKAGER_STEPS_LIST, "Review and Package", 7); // ao (O, ck)
+selectButton(PAResourceItoN.MessageBanner_CHANGES_DETECTED_IN_IP_THAT_REQUIRE, "IP has been modified."); // h (M, ck)
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+selectButton(PAResourceQtoS.ReviewContentPanel_RE_PACKAGE_IP, "Re-Package IP"); // a (c, ck)
+// TclEventType: PACKAGER_OBJECT_CHANGE
+// Tcl Message: set_property core_revision 33 [ipx::current_core] 
+// Tcl Message: ipx::update_source_project_archive -component [ipx::current_core] 
+// Tcl Message: ipx::create_xgui_files [ipx::current_core] 
+// Tcl Message: ipx::update_checksums [ipx::current_core] 
+// Tcl Message: ipx::save_core [ipx::current_core] 
+// bx (ck):  Package IP : addNotify
+selectButton("PAResourceQtoS.ReviewContentPanel_FINISHED_PACKAGING_SUCCESSFULLY_DO_Yes", "Yes"); // JButton (A, G)
+// Tcl Message: ipx::move_temp_component_back -component [ipx::current_core] 
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,398 MB. GUI used memory: 125 MB. Current time: 4/20/21 2:50:41 PM CEST
+// Tcl Message: close_project -delete 
+dismissDialog("Package IP"); // bx (ck)
+// TclEventType: CREATE_IP_CATALOG
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/Eagle7/IP_Repo 
+// Tcl Message: INFO: [IP_Flow 19-725] Reloaded user IP repository '/users/students/r0713047/Eagle/Eagle7/IP_Repo' 
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (cM, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (ck): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (A, G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Tue Apr 20 14:50:56 2021] Launched impl_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log 
+// Elapsed time: 34 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectButton(RDIResource.BaseReportTab_RERUN, "Rerun"); // h (cM, ck)
+// Tcl Command: 'report_ip_status -name ip_status '
+// TclEventType: IP_SUMMARY_RESULTS
+// Tcl Message: report_ip_status -name ip_status  
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "swipt_toplevel.v", 1); // k (j, ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Reset to Previous Step : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_1 -prev_step  
+dismissDialog("Reset to Previous Step"); // bx (ck)
+selectButton(PAResourceItoN.IPStatusSectionPanel_UPGRADE_SELECTED, "Upgrade Selected"); // a (g, ck)
+// Run Command: PAResourceCommand.PACommandNames_UPGRADE_IP
+// TclEventType: RSB_OPEN_DIAGRAM
+// Tcl Message: upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log 
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// bx (ck):  Upgrade IP : addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// Tcl Message: Upgrading '/users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3422] Upgraded drone_SWIPT_2020_0_0 (SWIPT_2020_v1.0 1.0) from revision 32 to revision 33 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>  
+// Tcl Message: INFO: [Coretcl 2-1525] Wrote upgrade log to '/users/students/r0713047/Eagle/Eagle7/drone/ip_upgrade.log'. 
+// Tcl Message: export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet 
+// aI (ck): Generate Output Products: addNotify
+selectButton("PAResourceTtoZ.UpgradeIP_IP_UPGRADE_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a (aI)
+// bx (ck):  Managing Output Products : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: generate_target all [get_files  /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// CommandFailedException: ERROR: [BD 41-45] Cell path not found: /drone 
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : </users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd>  VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.v VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/sim/drone.v VHDL Output written to : /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m09_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m07_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m06_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m05_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m04_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m03_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m02_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m01_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/m00_couplers/auto_pc . 
+// Tcl Message: INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0_axi_periph/s00_couplers/auto_pc . 
+// Tcl Message: Exporting to file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone.hwh Generated Block Design Tcl file /users/students/r0713047/Eagle/Eagle7/src/bd/hw_handoff/drone_bd.tcl 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Generated Hardware Definition File /users/students/r0713047/Eagle/Eagle7/src/bd/synth/drone.hwdef 
+// Tcl Message: generate_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 7802.555 ; gain = 0.000 ; free physical = 1588 ; free virtual = 36837 
+// Tcl Message: export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 2,470 MB (+3270kb) [01:09:48]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,407 MB. GUI used memory: 124 MB. Current time: 4/20/21 2:51:57 PM CEST
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 16 seconds
+selectButton("PAResourceQtoS.SimpleOutputProductDialog_GENERATION_OF_OUTPUT_PRODUCTS_COMPLETED_OK", "OK"); // JButton (A, G)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 2 
+// Tcl Message: [Tue Apr 20 14:52:06 2021] Launched synth_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/runme.log [Tue Apr 20 14:52:06 2021] Launched impl_1... Run output will be captured here: /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/impl_1/runme.log 
+// bx (ck):  Generate Bitstream : addNotify
+dismissDialog("Generate Bitstream"); // bx (ck)
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 
+// CommandFailedException: ERROR: [BD 41-113] Interface Net not found: /processing_system7_0_FCLK_CLK0 

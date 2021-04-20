@@ -1,0 +1,20 @@
+vhdl xil_defaultlib  \
+"../../../../../src/bd/ipshared/5f23/src/PWM_measure.vhd" \
+"../../../../../src/bd/ipshared/5f23/hdl/RC_v1_0_S00_AXI.vhd" \
+"../../../../../src/bd/ipshared/5f23/hdl/RC_v1_0.vhd" \
+"../../../../../src/bd/ip/drone_RC_1_0/sim/drone_RC_1_0.vhd" \
+"../../../../../src/bd/ip/drone_RC_0_0/sim/drone_RC_0_0.vhd" \
+"../../../../../src/bd/ip/drone_axi_gpio_testpins_0/sim/drone_axi_gpio_testpins_0.vhd" \
+"../../../../../src/bd/ip/drone_axi_gpio_led_0/sim/drone_axi_gpio_led_0.vhd" \
+"../../../../../src/bd/ipshared/7836/kill_switch.vhd" \
+"../../../../../src/bd/ip/drone_kill_switch_0_0/sim/drone_kill_switch_0_0.vhd" \
+"../../../../../src/bd/ipshared/7486/hdl/PWM_AXI.vhd" \
+"../../../../../src/bd/ipshared/7486/hdl/PWM_AXI_v1_0_S00_AXI.vhd" \
+"../../../../../src/bd/ipshared/7486/hdl/PWM_AXI_v1_0.vhd" \
+"../../../../../src/bd/ip/drone_PWM_AXI_triple_0_0/sim/drone_PWM_AXI_triple_0_0.vhd" \
+"../../../../../src/bd/ip/drone_PWM_AXI_triple_3_0/sim/drone_PWM_AXI_triple_3_0.vhd" \
+"../../../../../src/bd/ip/drone_PWM_AXI_triple_5_0/sim/drone_PWM_AXI_triple_5_0.vhd" \
+"../../../../../src/bd/ip/drone_rst_processing_system7_0_100M_0/sim/drone_rst_processing_system7_0_100M_0.vhd" \
+"../../../../../src/bd/ip/drone_PWM_AXI_triple_4_0/sim/drone_PWM_AXI_triple_4_0.vhd" \
+
+nosort

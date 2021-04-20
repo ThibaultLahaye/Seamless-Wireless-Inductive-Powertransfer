@@ -1,0 +1,116 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.8.5  2018-01-30 bk=1.4354 VDI=40 GEI=35 GUI=JA:1.6 TLS
+#  -string -flagsOSRD
+preplace port ADC_inp_14 -pg 1 -y 400 -defaultsOSRD
+preplace port SWIPT_OUT1 -pg 1 -y 40 -defaultsOSRD
+preplace port FR -pg 1 -y 780 -defaultsOSRD
+preplace port DDR -pg 1 -y 560 -defaultsOSRD
+preplace port ADC_inn_14 -pg 1 -y 380 -defaultsOSRD
+preplace port SWIPT_OUT2 -pg 1 -y 60 -defaultsOSRD
+preplace port Mode_switch -pg 1 -y 1400 -defaultsOSRD
+preplace port SWIPT_OUT3 -pg 1 -y 80 -defaultsOSRD
+preplace port Sounder -pg 1 -y 1080 -defaultsOSRD
+preplace port BL -pg 1 -y 800 -defaultsOSRD
+preplace port rc_kill_out -pg 1 -y 660 -defaultsOSRD
+preplace port ADC_inp_6 -pg 1 -y 360 -defaultsOSRD
+preplace port mode_inductive -pg 1 -y 1440 -defaultsOSRD
+preplace port rudd -pg 1 -y 1820 -defaultsOSRD
+preplace port throttle -pg 1 -y 1760 -defaultsOSRD
+preplace port leds_4bits -pg 1 -y 1240 -defaultsOSRD
+preplace port Core1_nIRQ -pg 1 -y 760 -defaultsOSRD
+preplace port FL -pg 1 -y 760 -defaultsOSRD
+preplace port rc_kill -pg 1 -y 1220 -defaultsOSRD
+preplace port ADC_inn_6 -pg 1 -y 340 -defaultsOSRD
+preplace port BR -pg 1 -y 820 -defaultsOSRD
+preplace port IIC_0 -pg 1 -y 600 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -y 580 -defaultsOSRD
+preplace port Sonar -pg 1 -y 1420 -defaultsOSRD
+preplace port elev -pg 1 -y 1800 -defaultsOSRD
+preplace port Core0_nIRQ -pg 1 -y 740 -defaultsOSRD
+preplace port tuner -pg 1 -y 1460 -defaultsOSRD
+preplace port FCLK_CLK0 -pg 1 -y 880 -defaultsOSRD
+preplace port gpio_testpin -pg 1 -y 1620 -defaultsOSRD
+preplace port db_port_switch_0 -pg 1 -y 160 -defaultsOSRD
+preplace port SWIPT_OUT0 -pg 1 -y 20 -defaultsOSRD
+preplace port aile -pg 1 -y 1780 -defaultsOSRD
+preplace inst PWM_AXI_triple_3 -pg 1 -lvl 3 -y 820 -defaultsOSRD
+preplace inst PWM_AXI_triple_4 -pg 1 -lvl 3 -y 470 -defaultsOSRD
+preplace inst rst_processing_system7_0_100M -pg 1 -lvl 1 -y 1010 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 4 -y 290 -defaultsOSRD
+preplace inst PWM_AXI_triple_5 -pg 1 -lvl 3 -y 1100 -defaultsOSRD
+preplace inst kill_switch_0 -pg 1 -lvl 5 -y 740 -defaultsOSRD
+preplace inst axi_gpio_led -pg 1 -lvl 3 -y 1260 -defaultsOSRD
+preplace inst axi_gpio_testpins -pg 1 -lvl 3 -y 1620 -defaultsOSRD
+preplace inst RC_0 -pg 1 -lvl 3 -y 1800 -defaultsOSRD
+preplace inst crypto2020_hash_ip_v1_0 -pg 1 -lvl 3 -y 960 -defaultsOSRD
+preplace inst RC_1 -pg 1 -lvl 3 -y 1440 -defaultsOSRD
+preplace inst SWIPT_2020_0 -pg 1 -lvl 3 -y 200 -defaultsOSRD
+preplace inst PWM_AXI_triple_0 -pg 1 -lvl 3 -y 680 -defaultsOSRD
+preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 920 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -y 700 -defaultsOSRD
+preplace netloc processing_system7_0_DDR 1 1 5 NJ 560 NJ 560 NJ 560 NJ 560 NJ
+preplace netloc processing_system7_0_axi_periph_M09_AXI 1 2 1 940
+preplace netloc PWM_AXI_triple_4_PWM_out0 1 2 2 930 60 1290
+preplace netloc ADC_inp_6_1 1 0 4 NJ 360 NJ 360 NJ 360 1340J
+preplace netloc SWIPT_2020_0_SWIPT_OUT1 1 3 3 1330J 40 NJ 40 NJ
+preplace netloc mode_inductive_1 1 0 3 NJ 1440 NJ 1440 NJ
+preplace netloc elev_1 1 0 3 NJ 1800 NJ 1800 NJ
+preplace netloc PWM_AXI_triple_3_PWM_out0 1 3 2 1350 740 NJ
+preplace netloc SWIPT_2020_0_ADC_address 1 3 1 1360
+preplace netloc ADC_inn_14_1 1 0 4 NJ 380 NJ 380 NJ 380 1360J
+preplace netloc SWIPT_2020_0_SWIPT_OUT2 1 3 3 1350J 60 NJ 60 NJ
+preplace netloc processing_system7_0_axi_periph_M08_AXI 1 2 1 950
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 890
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 1 910
+preplace netloc db_port_switch_0_1 1 0 3 NJ 160 NJ 160 NJ
+preplace netloc SWIPT_2020_0_SWIPT_OUT3 1 3 3 1340J 30 NJ 30 1950J
+preplace netloc PWM_AXI_triple_5_PWM_out0 1 3 3 NJ 1080 NJ 1080 NJ
+preplace netloc Mode_switch_1 1 0 3 NJ 1400 NJ 1400 NJ
+preplace netloc aile_1 1 0 3 NJ 1780 NJ 1780 NJ
+preplace netloc PWM_AXI_triple_0_PWM_out0 1 3 2 1370 680 NJ
+preplace netloc Core0_nIRQ_1 1 0 1 NJ
+preplace netloc processing_system7_0_axi_periph_M07_AXI 1 2 1 880
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 480
+preplace netloc SWIPT_2020_0_ADC_di_in 1 3 1 1370
+preplace netloc PWM_AXI_triple_0_PWM_out1 1 3 2 1330 700 NJ
+preplace netloc kill_switch_0_pwmo_0 1 5 1 NJ
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 1 900
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 10 910 470
+preplace netloc throttle_1 1 0 3 NJ 1760 NJ 1760 NJ
+preplace netloc PWM_AXI_triple_0_PWM_out2 1 3 2 1300 720 NJ
+preplace netloc kill_switch_0_pwmo_1 1 5 1 NJ
+preplace netloc kill_switch_0_rc_kill_out 1 5 1 NJ
+preplace netloc axi_gpio_led_GPIO 1 3 3 NJ 1240 NJ 1240 NJ
+preplace netloc SWIPT_2020_0_ADC_vn_in 1 3 1 1330
+preplace netloc SWIPT_2020_0_ADC_dwe_in 1 3 1 1390
+preplace netloc ADC_inp_14_1 1 0 4 -20J 390 NJ 390 NJ 390 1330J
+preplace netloc kill_switch_0_pwmo_2 1 5 1 NJ
+preplace netloc processing_system7_0_IIC_1 1 1 5 NJ 600 NJ 600 NJ 600 NJ 600 NJ
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 1 860
+preplace netloc kill_switch_0_pwmo_3 1 5 1 NJ
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 2 500 620 930
+preplace netloc processing_system7_0_axi_periph_M06_AXI 1 2 1 850
+preplace netloc xadc_wiz_0_eoc_out 1 3 2 1390 70 1700
+preplace netloc axi_gpio_testpins_GPIO 1 3 3 NJ 1620 NJ 1620 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 1 5 NJ 580 NJ 580 NJ 580 NJ 580 NJ
+preplace netloc SWIPT_2020_0_ADC_vp_in 1 3 1 1360
+preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 510
+preplace netloc Core1_nIRQ_1 1 0 1 NJ
+preplace netloc RC_in_3_1 1 0 3 NJ 1820 NJ 1820 NJ
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 5 0 900 490 610 920 350 1380 50 1710J
+preplace netloc xadc_wiz_0_drdy_out 1 2 2 920 40 1320
+preplace netloc ADC_inn_6_1 1 0 4 NJ 340 NJ 340 NJ 340 1390J
+preplace netloc tuner_1 1 0 3 NJ 1460 NJ 1460 NJ
+preplace netloc processing_system7_0_FCLK_CLK1 1 0 2 -10 500 470
+preplace netloc axi_gpio_led_gpio2_io_o 1 3 2 1350J 1070 1710
+preplace netloc rc_kill_1 1 0 6 -20J 490 NJ 490 860J 570 NJ 570 1700 880 NJ
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 1 880
+preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 1 870
+preplace netloc xadc_wiz_0_do_out 1 2 2 940 50 1300
+preplace netloc SWIPT_2020_0_SWIPT_OUT0 1 3 3 1310J 20 NJ 20 NJ
+preplace netloc Sonar_1 1 0 3 NJ 1420 NJ 1420 NJ
+levelinfo -pg 1 -40 240 680 1130 1550 1830 1980 -top 0 -bot 1920
+",
+}
+0
