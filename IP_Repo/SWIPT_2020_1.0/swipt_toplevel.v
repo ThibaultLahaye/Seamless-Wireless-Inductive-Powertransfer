@@ -45,14 +45,14 @@ module swipt_toplevel #(
 	output wire SWIPT_OUT2,
 	output wire SWIPT_OUT3,
 	input wire swiptONHeartbeat,
-	output reg [31:0] db_port_0,
-    output reg [31:0] db_port_1,
-    output reg [31:0] db_port_2,
-    output reg [31:0] db_port_3,
-    output reg [31:0] db_port_4,
-    output reg [31:0] db_port_5,
-    output reg [31:0] db_port_6,
-    output reg [31:0] db_port_7,
+	output wire [31:0] db_port_0,
+    output wire [31:0] db_port_1,
+    output wire [31:0] db_port_2,
+    output wire [31:0] db_port_3,
+    output wire [31:0] db_port_4,
+    output wire [31:0] db_port_5,
+    output wire [31:0] db_port_6,
+    output wire [31:0] db_port_7,
     input wire db_port_switchADC_in
 	);
 	
@@ -104,55 +104,48 @@ module swipt_toplevel #(
 	// From here it is upto you (replace 1'b0 with something more usefull). Write the HDL that makes the power&data transfer work!
 	// Ensure that you only activate the SWIPT_OUTs when the time is right! 
 	// Do not trust the swiptAlive value to do this for you, this is a backup mechanism!
-	
-	//assign db_port_0 = 32'd000;
-	//assign db_port_1 = 32'd100;
-	//assign db_port_2 = 32'd200;
-	//assign db_port_3 = 32'd300;
-	//assign db_port_4 = 32'd400;
-	//assign db_port_5 = 32'd500;
-	//assign db_port_6 = 32'd600;
-	//assign db_port_7 = 32'd700;
-	
-	//always @ (posedge clk) begin
-	//   if (db_port_switch) begin
-	//       db_port_0 = 32'd100;
-	//       db_port_1 = 32'd100;
-	//       db_port_2 = 32'd100;
-	//       db_port_3 = 32'd100;
-	//       db_port_4 = 32'd100;
-	//       db_port_5 = 32'd100;
-	//       db_port_6 = 32'd100;
-	//       db_port_7 = 32'd100;
-	//   end else begin
-    //       db_port_0 = 32'd200;
-    //       db_port_1 = 32'd200;
-    //       db_port_2 = 32'd200;
-    //       db_port_3 = 32'd200;
-    //       db_port_4 = 32'd200;
-    //       db_port_5 = 32'd200;
-    //       db_port_6 = 32'd200;
-    //       db_port_7 = 32'd200;
-	//   endo_max
-	//end
+
+	wire [31:0] db_port_0; //o_freq
+	wire [31:0] o_db_state; //db_state
+	wire [31:0] o_db_index_delta; //db_index_delta
+	wire [31:0] o_db_flag; //db_flag
+	wire [31:0] o_db_recursion_depth;
+	wire [31:0] db_port_5; 
+	wire [31:0] db_port_6;
+	wire [31:0] db_port_7;
 
 
 wire [11:0] o_max;
 wire [31:0] o_freq;
 wire o_enable;
 
-    EnvelopeFollower inst_EnvelopeFollower(
-        .i_clk(clk),
-        .i_adc(ADC_in),
-        //.o_min(),
-        .o_max(o_max)
+//    EnvelopeFollower inst_EnvelopeFollower(
+//        .i_clk(clk),
+//        .i_adc(ADC_in),
+//        //.o_min(),
+//        .o_max(o_max)
     
-        );    
+//        );
+
+	Boxcar inst_Boxcar (
+		.i_clk (clk),
+		.i_reset (~nrst),
+		.i_sample (ADC_in),
+		.o_result (),
+		.o_avg_result(o_max)
+	);   
+        
+    assign db_port_5 = o_max;
+         
     FrequencyTrackerII inst_FrequencyTrackerII(
     	.i_clk(clk),
     	.i_envelope_max(o_max),
     	.o_freq(o_freq),
-    	.o_enable(o_enable)
+    	.o_enable(o_enable),
+    	.o_db_state(o_db_state),
+    	.o_db_index_delta(o_db_index_delta),
+    	.o_db_substate(o_db_substate),
+    	.o_db_recursion_depth(o_db_recursion_depth)
     	);
     
 
@@ -179,6 +172,15 @@ wire o_enable;
 	assign SWIPT_OUT1 = pwm_t_adc_s2;
 	assign SWIPT_OUT2 = pwm_t_adc_s3;
 	assign SWIPT_OUT3 = pwm_t_adc_s4;
+	
+	assign db_port_0 = o_freq;
+    assign db_port_1 = o_db_state;
+    assign db_port_2 = o_db_index_delta;
+    assign db_port_3 = o_db_substate;
+    assign db_port_4 = o_db_recursion_depth;
+    //assign db_port_5 = 32'd500;
+    //assign db_port_6 = 32'd600;
+    //assign db_port_7 = 32'd700;
 	
 
 endmodule
