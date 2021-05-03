@@ -113,6 +113,7 @@ module swipt_toplevel #(
 	wire [31:0] db_port_5; 
 	wire [31:0] db_port_6;
 	wire [31:0] db_port_7;
+	wire [31:0] o_db_substate;
 
 
 wire [11:0] o_max;
