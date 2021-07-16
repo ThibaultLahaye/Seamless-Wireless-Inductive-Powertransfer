@@ -18,48 +18,47 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {HDL-1065} -limit 10000
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.cache/wt [current_project]
-set_property parent.project_path /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr [current_project]
-set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+set_property webtalk.parent_dir C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.cache/wt [current_project]
+set_property parent.project_path C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-set_property ip_repo_paths /users/students/r0713047/Eagle/Eagle7/IP_Repo [current_project]
-set_property ip_output_repo /users/students/r0713047/Eagle/Eagle7/drone/drone.cache/ip [current_project]
+set_property ip_repo_paths c:/Users/Thiba/OneDrive/Desktop/Eagle7/IP_Repo [current_project]
+update_ip_catalog
+set_property ip_output_repo c:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib /users/students/r0713047/Eagle/Eagle7/src/bd/hdl/drone_wrapper.v
-add_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0_board.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0_board.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_xbar_0/drone_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_8/drone_auto_pc_8_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_7/drone_auto_pc_7_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_6/drone_auto_pc_6_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_5/drone_auto_pc_5_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_4/drone_auto_pc_4_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_3/drone_auto_pc_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_2/drone_auto_pc_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_1/drone_auto_pc_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_0/drone_auto_pc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_auto_pc_9/drone_auto_pc_9_ooc.xdc]
-set_property used_in_implementation false [get_files -all /users/students/r0713047/Eagle/Eagle7/src/bd/drone_ooc.xdc]
+read_verilog -library xil_defaultlib C:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/hdl/drone_wrapper.v
+add_files C:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/drone.bd
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_xbar_0/drone_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_9/drone_auto_pc_9_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_0/drone_auto_pc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_1/drone_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_2/drone_auto_pc_2_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_3/drone_auto_pc_3_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_4/drone_auto_pc_4_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_5/drone_auto_pc_5_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_6/drone_auto_pc_6_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_7/drone_auto_pc_7_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_auto_pc_8/drone_auto_pc_8_ooc.xdc]
+set_property used_in_implementation false [get_files -all C:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/drone_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -69,12 +68,12 @@ set_property used_in_implementation false [get_files -all /users/students/r07130
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc /users/students/r0713047/Eagle/Eagle7/constraints/ZYBO_Master_2018.xdc
-set_property used_in_implementation false [get_files /users/students/r0713047/Eagle/Eagle7/constraints/ZYBO_Master_2018.xdc]
+read_xdc C:/Users/Thiba/OneDrive/Desktop/Eagle7/constraints/ZYBO_Master_2018.xdc
+set_property used_in_implementation false [get_files C:/Users/Thiba/OneDrive/Desktop/Eagle7/constraints/ZYBO_Master_2018.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
-set_param ips.enableIPCacheLiteLoad 0
+set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 synth_design -top drone_wrapper -part xc7z010clg400-1 -flatten_hierarchy none -directive RuntimeOptimized -retiming -fsm_extraction off -keep_equivalent_registers

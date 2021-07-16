@@ -1,4 +1,2339 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 11:28:29 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 175) to (Rev. 176)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 10:42:07 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 174) to (Rev. 175)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 09:53:51 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 173) to (Rev. 174)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 09:41:45 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 172) to (Rev. 173)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 08:47:59 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_xadc_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_xadc_wiz_0_0 (xilinx.com:ip:xadc_wiz:3.3) from (Rev. 5) to (Rev. 6)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 08:47:59 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_rst_processing_system7_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_rst_processing_system7_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0) from (Rev. 12) to (Rev. 13)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 08:47:59 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_processing_system7_0_axi_periph_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_processing_system7_0_axi_periph_0 (xilinx.com:ip:axi_interconnect:2.1) from (Rev. 18) to (Rev. 19)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 08:47:59 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of drone_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 08:47:59 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_axi_gpio_testpins_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_axi_gpio_testpins_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Mon May 17 08:47:59 2021
+| Host         : Thibault-Laptop running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_axi_gpio_led_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_axi_gpio_led_0 (xilinx.com:ip:axi_gpio:2.0) from (Rev. 19) to (Rev. 20)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 20:48:48 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 171) to (Rev. 172)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 20:12:39 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 170) to (Rev. 171)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 19:23:48 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 169) to (Rev. 170)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 18:52:59 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 168) to (Rev. 169)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 18:14:54 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 167) to (Rev. 168)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 17:19:09 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 166) to (Rev. 167)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 16:56:59 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 165) to (Rev. 166)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 16:14:14 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 164) to (Rev. 165)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 15:36:29 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 163) to (Rev. 164)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 14:41:59 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 162) to (Rev. 163)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 14:13:12 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 161) to (Rev. 162)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 13:44:13 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 160) to (Rev. 161)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 13:15:21 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 159) to (Rev. 160)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 12:41:27 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 158) to (Rev. 159)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 11:51:47 2021
+| Host         : pc-klas6-9.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 157) to (Rev. 158)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 00:28:37 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 156) to (Rev. 157)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Fri May 14 00:01:45 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 155) to (Rev. 156)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 23:40:21 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 154) to (Rev. 155)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 22:56:48 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 153) to (Rev. 154)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 22:56:01 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 152) to (Rev. 153)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 22:43:26 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 151) to (Rev. 152)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 22:22:25 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 150) to (Rev. 151)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 22:01:10 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 147) to (Rev. 150)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 21:33:00 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 146) to (Rev. 147)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 21:25:52 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 145) to (Rev. 146)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 21:22:21 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 144) to (Rev. 145)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 20:54:26 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 143) to (Rev. 144)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 20:30:30 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 142) to (Rev. 143)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 20:05:02 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 141) to (Rev. 142)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 19:59:14 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 140) to (Rev. 141)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 19:42:27 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 139) to (Rev. 140)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 19:23:04 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 138) to (Rev. 139)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 18:19:45 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 137) to (Rev. 138)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 17:51:36 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 136) to (Rev. 137)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 17:33:25 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 134) to (Rev. 136)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 16:15:34 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 133) to (Rev. 134)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 15:50:20 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 132) to (Rev. 133)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 14:32:54 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 131) to (Rev. 132)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 14:09:48 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 130) to (Rev. 131)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 13:50:26 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 129) to (Rev. 130)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 13:32:24 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 128) to (Rev. 129)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 13:15:26 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 127) to (Rev. 128)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 12:49:06 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 126) to (Rev. 127)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 12:47:58 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 125) to (Rev. 126)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 12:28:24 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 124) to (Rev. 125)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 12:27:20 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 123) to (Rev. 124)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 12:02:40 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 122) to (Rev. 123)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 12:00:47 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 121) to (Rev. 122)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 11:45:35 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 120) to (Rev. 121)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 11:29:15 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 119) to (Rev. 120)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 11:20:54 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 118) to (Rev. 119)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 11:02:49 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 117) to (Rev. 118)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu May 13 10:33:45 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 116) to (Rev. 117)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 19:39:35 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 115) to (Rev. 116)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 19:31:33 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 114) to (Rev. 115)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 19:22:32 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 113) to (Rev. 114)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 17:55:43 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 112) to (Rev. 113)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 17:42:42 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 111) to (Rev. 112)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 17:05:58 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 110) to (Rev. 111)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 17:03:35 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 109) to (Rev. 110)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 16:33:55 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 108) to (Rev. 109)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 16:32:55 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 107) to (Rev. 108)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 16:10:55 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 105) to (Rev. 107)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 15:42:59 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 104) to (Rev. 105)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 15:27:18 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 103) to (Rev. 104)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 15:23:40 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 102) to (Rev. 103)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 15:09:43 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 101) to (Rev. 102)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 14:46:49 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 100) to (Rev. 101)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 14:32:56 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 99) to (Rev. 100)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'drone_SWIPT_2020_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'i_inductive_mode'
+
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 14:31:04 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 98) to (Rev. 99)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 14:26:14 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 97) to (Rev. 98)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 14:12:00 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 96) to (Rev. 97)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 13:57:40 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 95) to (Rev. 96)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May 11 13:52:16 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 94) to (Rev. 95)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 18:31:40 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 93) to (Rev. 94)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 18:17:27 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 92) to (Rev. 93)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 18:01:31 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 90) to (Rev. 92)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 17:42:10 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 86) to (Rev. 90)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 17:10:26 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 85) to (Rev. 86)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 16:57:51 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 84) to (Rev. 85)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 16:54:28 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 83) to (Rev. 84)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 14:26:52 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 82) to (Rev. 83)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 14:04:50 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 81) to (Rev. 82)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May 10 14:01:09 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 80) to (Rev. 81)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 18:58:42 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 79) to (Rev. 80)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 18:43:05 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 78) to (Rev. 79)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 18:11:32 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 77) to (Rev. 78)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 18:08:07 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 76) to (Rev. 77)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 17:54:58 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 75) to (Rev. 76)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 17:41:41 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 74) to (Rev. 75)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 17:27:19 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 73) to (Rev. 74)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 17:13:22 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 72) to (Rev. 73)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 17:01:47 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 71) to (Rev. 72)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 16:42:24 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 70) to (Rev. 71)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 16:24:16 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 69) to (Rev. 70)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 16:21:12 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 68) to (Rev. 69)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 16:06:04 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 67) to (Rev. 68)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Tue May  4 15:59:01 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 64) to (Rev. 67)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May  3 15:48:31 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 63) to (Rev. 64)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Mon May  3 15:18:49 2021
+| Host         : pc-klas6-7.esat.kuleuven.be running 64-bit CentOS Linux release 8.3.2011
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'drone_SWIPT_2020_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of drone_SWIPT_2020_0_0 (user.org:user:SWIPT_2020:1.0) from (Rev. 33) to (Rev. 63)
+
+
+
+
+
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
 | Date         : Tue Apr 20 14:51:42 2021

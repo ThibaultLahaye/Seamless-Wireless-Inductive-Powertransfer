@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon May  3 16:17:25 2021
+# Process ID: 19272
+# Current directory: /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7
+# Command line: wbtcv -mode batch -source /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project/SWIPT_2020_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+# Log file: /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/webtalk.log
+# Journal file: /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/webtalk.jou
+#-----------------------------------------------------------
+source /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project/SWIPT_2020_v1_0_project.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon May  3 16:17:26 2021...

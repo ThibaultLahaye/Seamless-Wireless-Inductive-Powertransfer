@@ -1,13 +1,14 @@
-set_property SRC_FILE_INFO {cfile:/users/students/r0713047/Eagle/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc rfile:../../../../src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:drone_i/processing_system7_0/inst} [current_design]
-set_property SRC_FILE_INFO {cfile:/users/students/r0713047/Eagle/Eagle7/constraints/ZYBO_Master_2018.xdc rfile:../../../../constraints/ZYBO_Master_2018.xdc id:2} [current_design]
+set_property SRC_FILE_INFO {cfile:c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc rfile:../../../../src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc id:1 order:EARLY scoped_inst:drone_i/processing_system7_0/inst} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Thiba/OneDrive/Desktop/Eagle7/constraints/ZYBO_Master_2018.xdc rfile:../../../../constraints/ZYBO_Master_2018.xdc id:2} [current_design]
+current_instance drone_i/processing_system7_0/inst
 set_property src_info {type:SCOPED_XDC file:1 line:21 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter clk_fpga_2 0.15
-set_property src_info {type:SCOPED_XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
-set_input_jitter clk_fpga_3 0.38997
-set_property src_info {type:SCOPED_XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_0 0.3
-set_property src_info {type:SCOPED_XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]
+set_property src_info {type:SCOPED_XDC file:1 line:24 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter clk_fpga_2 0.15
+set_property src_info {type:SCOPED_XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]
 set_input_jitter clk_fpga_1 0.21
+set_property src_info {type:SCOPED_XDC file:1 line:30 export:INPUT save:INPUT read:READ} [current_design]
+set_input_jitter clk_fpga_3 0.38997
 set_property src_info {type:SCOPED_XDC file:1 line:40 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "C11" [get_ports "MIO[53]"]
 set_property src_info {type:SCOPED_XDC file:1 line:46 export:INPUT save:INPUT read:READ} [current_design]
@@ -268,6 +269,7 @@ set_property src_info {type:SCOPED_XDC file:1 line:655 export:INPUT save:INPUT r
 set_property PACKAGE_PIN "B10" [get_ports "PS_SRSTB"]
 set_property src_info {type:SCOPED_XDC file:1 line:658 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN "E7" [get_ports "PS_CLK"]
+current_instance
 set_property src_info {type:XDC file:2 line:26 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T16 [get_ports db_port_switch_0]
 set_property src_info {type:XDC file:2 line:94 export:INPUT save:INPUT read:READ} [current_design]

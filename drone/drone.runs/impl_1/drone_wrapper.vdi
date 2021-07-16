@@ -1,0 +1,1625 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 17 11:34:07 2021
+# Process ID: 18804
+# Current directory: C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1
+# Command line: vivado.exe -log drone_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source drone_wrapper.tcl -notrace
+# Log file: C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.vdi
+# Journal file: C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source drone_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Thiba/OneDrive/Desktop/Eagle7/IP_Repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: link_design -top drone_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Netlist 29-17] Analyzing 1010 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc] for cell 'drone_i/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.389970 which will be rounded to 0.390 to ensure it is an integer multiple of 1 picosecond [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc:30]
+Finished Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_processing_system7_0_0/drone_processing_system7_0_0.xdc] for cell 'drone_i/processing_system7_0/inst'
+Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0_board.xdc] for cell 'drone_i/axi_gpio_testpins/U0'
+Finished Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0_board.xdc] for cell 'drone_i/axi_gpio_testpins/U0'
+Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0.xdc] for cell 'drone_i/axi_gpio_testpins/U0'
+Finished Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_testpins_0/drone_axi_gpio_testpins_0.xdc] for cell 'drone_i/axi_gpio_testpins/U0'
+Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0_board.xdc] for cell 'drone_i/axi_gpio_led/U0'
+Finished Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0_board.xdc] for cell 'drone_i/axi_gpio_led/U0'
+Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0.xdc] for cell 'drone_i/axi_gpio_led/U0'
+Finished Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_axi_gpio_led_0/drone_axi_gpio_led_0.xdc] for cell 'drone_i/axi_gpio_led/U0'
+Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0_board.xdc] for cell 'drone_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0_board.xdc] for cell 'drone_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0.xdc] for cell 'drone_i/rst_processing_system7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_rst_processing_system7_0_100M_0/drone_rst_processing_system7_0_100M_0.xdc] for cell 'drone_i/rst_processing_system7_0_100M/U0'
+Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0.xdc] for cell 'drone_i/xadc_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0.xdc] for cell 'drone_i/xadc_wiz_0/inst'
+Parsing XDC File [C:/Users/Thiba/OneDrive/Desktop/Eagle7/constraints/ZYBO_Master_2018.xdc]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance ADC_inn_6_IBUF_inst at K14 (IOB_X0Y60) since it belongs to a shape containing instance drone_i/xadc_wiz_0/inst. The shape requires relative placement between ADC_inn_6_IBUF_inst and drone_i/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for drone_i/xadc_wiz_0/inst. [C:/Users/Thiba/OneDrive/Desktop/Eagle7/constraints/ZYBO_Master_2018.xdc:462]
+CRITICAL WARNING: [Vivado 12-1411] Cannot set LOC property of ports, Could not legally place instance ADC_inp_6_IBUF_inst at J14 (IOB_X0Y59) since it belongs to a shape containing instance drone_i/xadc_wiz_0/inst. The shape requires relative placement between ADC_inp_6_IBUF_inst and drone_i/xadc_wiz_0/inst that can not be honoured because it would result in an invalid location for drone_i/xadc_wiz_0/inst. [C:/Users/Thiba/OneDrive/Desktop/Eagle7/constraints/ZYBO_Master_2018.xdc:463]
+Finished Parsing XDC File [C:/Users/Thiba/OneDrive/Desktop/Eagle7/constraints/ZYBO_Master_2018.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 709.141 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+10 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 709.141 ; gain = 406.402
+zip_exception: Failed to open zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef. This may indicate that the file is corrupt, that there is insufficient free disk space available to uncompress it, or that you do not have permission to create fileszip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingzip_exception: zip archive C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper.hwdef is already open for writingCommand: opt_design -directive RuntimeOptimized
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 710.426 ; gain = 1.285
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 100 inverter(s) to 107 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 22425a7c1
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 1312.059 ; gain = 524.648
+INFO: [Opt 31-389] Phase Retarget created 27 cells and removed 188 cells
+INFO: [Opt 31-1021] In phase Retarget, 1 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 19 inverter(s) to 26 load pin(s).
+Phase 2 Constant propagation | Checksum: 1a76a8af1
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1312.059 ; gain = 524.648
+INFO: [Opt 31-389] Phase Constant propagation created 143 cells and removed 624 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 193b5f3e2
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:17 . Memory (MB): peak = 1312.059 ; gain = 524.648
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 3327 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 193b5f3e2
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:18 . Memory (MB): peak = 1312.059 ; gain = 524.648
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 291bf8290
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.059 ; gain = 524.648
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 2015e8dd3
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.059 ; gain = 524.648
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              27  |             188  |                                              1  |
+|  Constant propagation         |             143  |             624  |                                              0  |
+|  Sweep                        |               4  |            3327  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1312.059 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 2015e8dd3
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.059 ; gain = 524.648
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1312.059 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 2015e8dd3
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1312.059 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+27 Infos, 1 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 1312.059 ; gain = 602.918
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1312.059 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.129 . Memory (MB): peak = 1312.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1312.059 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file drone_wrapper_drc_opted.rpt -pb drone_wrapper_drc_opted.pb -rpx drone_wrapper_drc_opted.rpx
+Command: report_drc -file drone_wrapper_drc_opted.rpt -pb drone_wrapper_drc_opted.pb -rpx drone_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive ExtraTimingOpt
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'ExtraTimingOpt' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1312.059 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1b1169543
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1312.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1312.059 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 117a37680
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1322.031 ; gain = 9.973
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 11f778a5d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 11f778a5d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1408.555 ; gain = 96.496
+Phase 1 Placer Initialization | Checksum: 11f778a5d
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 139b39795
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 2.2 Physical Synthesis In Placer
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-46] Identified 12 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[9]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[8]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[4]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[7]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[5]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[1]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[12]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[2]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[3]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[10]. Replicated 2 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[0]. Replicated 1 times.
+INFO: [Physopt 32-81] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/delta_freq_reg_n_0_[6]. Replicated 2 times.
+INFO: [Physopt 32-232] Optimized 12 nets. Created 22 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 12 nets or cells. Created 22 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1408.555 ; gain = 0.000
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for HD net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1408.555 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------
+|  Very High Fanout              |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                 |           22  |              0  |                    12  |           0  |           1  |  00:00:02  |
+|  DSP Register                  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  HD Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                         |           22  |              0  |                    12  |           0  |           6  |  00:00:02  |
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.2 Physical Synthesis In Placer | Checksum: 172db8a83
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:35 . Memory (MB): peak = 1408.555 ; gain = 96.496
+Phase 2 Global Placement | Checksum: 18f7e29ce
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:35 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 18f7e29ce
+
+Time (s): cpu = 00:00:51 ; elapsed = 00:00:35 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1209e833a
+
+Time (s): cpu = 00:00:55 ; elapsed = 00:00:39 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 7cff2a18
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:39 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: a4761a6e
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:39 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 15d1d046a
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:46 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: c76697f0
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:00:52 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1593fbf3f
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: fd6d795a
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:53 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: e8325952
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:03 . Memory (MB): peak = 1408.555 ; gain = 96.496
+Phase 3 Detail Placement | Checksum: e8325952
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:01:04 . Memory (MB): peak = 1408.555 ; gain = 96.496
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1a3bf5e8a
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Place 46-46] BUFG insertion identified 0 candidate nets, 0 success, 0 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1a3bf5e8a
+
+Time (s): cpu = 00:01:28 ; elapsed = 00:01:07 . Memory (MB): peak = 1420.594 ; gain = 108.535
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-90.656. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1818fb598
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:55 . Memory (MB): peak = 1420.602 ; gain = 108.543
+Phase 4.1 Post Commit Optimization | Checksum: 1818fb598
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:55 . Memory (MB): peak = 1420.602 ; gain = 108.543
+Post Placement Optimization Initialization | Checksum: 13da56ed3
+INFO: [Place 46-46] BUFG insertion identified 0 candidate nets, 0 success, 0 bufg driver replicated, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-89.934. For the most accurate timing information please run report_timing.
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 15b86690c
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:02:43 . Memory (MB): peak = 1422.559 ; gain = 110.500
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 15b86690c
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:02:43 . Memory (MB): peak = 1422.559 ; gain = 110.500
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1422.559 ; gain = 0.000
+Phase 4.4 Final Placement Cleanup | Checksum: f11ce7cb
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:02:43 . Memory (MB): peak = 1422.559 ; gain = 110.500
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: f11ce7cb
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:02:43 . Memory (MB): peak = 1422.559 ; gain = 110.500
+Ending Placer Task | Checksum: 981b265d
+
+Time (s): cpu = 00:03:02 ; elapsed = 00:02:43 . Memory (MB): peak = 1422.559 ; gain = 110.500
+INFO: [Common 17-83] Releasing license: Implementation
+76 Infos, 101 Warnings, 2 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:03:06 ; elapsed = 00:02:45 . Memory (MB): peak = 1422.559 ; gain = 110.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1422.559 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1427.254 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 1427.293 ; gain = 4.734
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file drone_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 1427.293 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file drone_wrapper_utilization_placed.rpt -pb drone_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file drone_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 1427.293 ; gain = 0.000
+Command: route_design -directive NoTimingRelaxation
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'NoTimingRelaxation'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 8c0bc8e5 ConstDB: 0 ShapeSum: c0f5d78 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1a07fd0f3
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1479.621 ; gain = 45.051
+Post Restoration Checksum: NetGraph: e77120e2 NumContArr: b90eb011 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1a07fd0f3
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1498.984 ; gain = 64.414
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1a07fd0f3
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1505.645 ; gain = 71.074
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1a07fd0f3
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1505.645 ; gain = 71.074
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 198792870
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:22 . Memory (MB): peak = 1528.047 ; gain = 93.477
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-85.811| TNS=-17434.264| WHS=-0.243 | THS=-167.016|
+
+Phase 2 Router Initialization | Checksum: 12a17511d
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:24 . Memory (MB): peak = 1578.738 ; gain = 144.168
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1a2165c48
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:27 . Memory (MB): peak = 1578.738 ; gain = 144.168
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 4729
+ Number of Nodes with overlaps = 2652
+ Number of Nodes with overlaps = 1487
+ Number of Nodes with overlaps = 683
+ Number of Nodes with overlaps = 388
+ Number of Nodes with overlaps = 189
+ Number of Nodes with overlaps = 77
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-101.657| TNS=-22397.051| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 14556161a
+
+Time (s): cpu = 00:02:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1578.738 ; gain = 144.168
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 2775
+ Number of Nodes with overlaps = 1573
+ Number of Nodes with overlaps = 952
+ Number of Nodes with overlaps = 177
+ Number of Nodes with overlaps = 144
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 11
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-107.896| TNS=-23686.953| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 2627c7be2
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:03:04 . Memory (MB): peak = 1578.738 ; gain = 144.168
+Phase 4 Rip-up And Reroute | Checksum: 2627c7be2
+
+Time (s): cpu = 00:04:37 ; elapsed = 00:03:04 . Memory (MB): peak = 1578.738 ; gain = 144.168
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1d19ee8b4
+
+Time (s): cpu = 00:04:38 ; elapsed = 00:03:05 . Memory (MB): peak = 1578.738 ; gain = 144.168
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-101.641| TNS=-22352.088| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 175a7802c
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:03:07 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 175a7802c
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:03:07 . Memory (MB): peak = 1592.977 ; gain = 158.406
+Phase 5 Delay and Skew Optimization | Checksum: 175a7802c
+
+Time (s): cpu = 00:04:42 ; elapsed = 00:03:07 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1bf73c96d
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:03:08 . Memory (MB): peak = 1592.977 ; gain = 158.406
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-101.635| TNS=-21554.355| WHS=-0.026 | THS=-0.026 |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1d13bd617
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:03:08 . Memory (MB): peak = 1592.977 ; gain = 158.406
+Phase 6 Post Hold Fix | Checksum: 10a88db80
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:03:08 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 157e9a9b5
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:10 . Memory (MB): peak = 1592.977 ; gain = 158.406
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-101.635| TNS=-21554.355| WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 157e9a9b5
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:10 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 10.1662 %
+  Global Horizontal Routing Utilization  = 12.6562 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 72.0721%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 65.7658%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X11Y12 -> INT_R_X11Y12
+West Dir 1x1 Area, Max Cong = 82.3529%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 1 Aspect Ratio: 1 Sparse Ratio: 0.75
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 157e9a9b5
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:10 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 157e9a9b5
+
+Time (s): cpu = 00:04:46 ; elapsed = 00:03:10 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 132039a8d
+
+Time (s): cpu = 00:04:48 ; elapsed = 00:03:12 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 11 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1592.977 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-100.053. For the most accurate timing information please run report_timing.
+Ending IncrPlace Task | Checksum: 140dd3868
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 1592.977 ; gain = 0.000
+Phase 11 Incr Placement Change | Checksum: 132039a8d
+
+Time (s): cpu = 00:05:09 ; elapsed = 00:03:31 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 12 Build RT Design
+Phase 12 Build RT Design | Checksum: 15ce5140f
+
+Time (s): cpu = 00:05:12 ; elapsed = 00:03:35 . Memory (MB): peak = 1592.977 ; gain = 158.406
+Post Restoration Checksum: NetGraph: 348725 NumContArr: d823e2c4 Constraints: 0 Timing: 0
+
+Phase 13 Router Initialization
+
+Phase 13.1 Create Timer
+Phase 13.1 Create Timer | Checksum: d85869e9
+
+Time (s): cpu = 00:05:13 ; elapsed = 00:03:36 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 13.2 Fix Topology Constraints
+Phase 13.2 Fix Topology Constraints | Checksum: d85869e9
+
+Time (s): cpu = 00:05:13 ; elapsed = 00:03:36 . Memory (MB): peak = 1592.977 ; gain = 158.406
+
+Phase 13.3 Pre Route Cleanup
+Phase 13.3 Pre Route Cleanup | Checksum: cf22f7cb
+
+Time (s): cpu = 00:05:13 ; elapsed = 00:03:36 . Memory (MB): peak = 1592.977 ; gain = 158.406
+ Number of Nodes with overlaps = 0
+
+Phase 13.4 Update Timing
+Phase 13.4 Update Timing | Checksum: 169221d6d
+
+Time (s): cpu = 00:05:22 ; elapsed = 00:03:41 . Memory (MB): peak = 1594.301 ; gain = 159.730
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-100.000| TNS=-21361.809| WHS=-0.243 | THS=-166.127|
+
+Phase 13 Router Initialization | Checksum: edb8b211
+
+Time (s): cpu = 00:05:25 ; elapsed = 00:03:43 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 14 Initial Routing
+Phase 14 Initial Routing | Checksum: 27a44332e
+
+Time (s): cpu = 00:05:26 ; elapsed = 00:03:44 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 15 Rip-up And Reroute
+
+Phase 15.1 Global Iteration 0
+ Number of Nodes with overlaps = 2689
+ Number of Nodes with overlaps = 2134
+ Number of Nodes with overlaps = 1377
+ Number of Nodes with overlaps = 696
+ Number of Nodes with overlaps = 371
+ Number of Nodes with overlaps = 204
+ Number of Nodes with overlaps = 125
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-103.721| TNS=-21885.070| WHS=N/A    | THS=N/A    |
+
+Phase 15.1 Global Iteration 0 | Checksum: 19079137a
+
+Time (s): cpu = 00:06:43 ; elapsed = 00:04:32 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 15.2 Global Iteration 1
+ Number of Nodes with overlaps = 3003
+ Number of Nodes with overlaps = 1671
+ Number of Nodes with overlaps = 789
+ Number of Nodes with overlaps = 427
+ Number of Nodes with overlaps = 178
+ Number of Nodes with overlaps = 68
+ Number of Nodes with overlaps = 24
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-105.969| TNS=-22304.670| WHS=N/A    | THS=N/A    |
+
+Phase 15.2 Global Iteration 1 | Checksum: 1228944c2
+
+Time (s): cpu = 00:08:07 ; elapsed = 00:05:26 . Memory (MB): peak = 1635.457 ; gain = 200.887
+Phase 15 Rip-up And Reroute | Checksum: 1228944c2
+
+Time (s): cpu = 00:08:07 ; elapsed = 00:05:26 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 16 Delay and Skew Optimization
+
+Phase 16.1 Delay CleanUp
+
+Phase 16.1.1 Update Timing
+Phase 16.1.1 Update Timing | Checksum: 91d44c2b
+
+Time (s): cpu = 00:08:09 ; elapsed = 00:05:27 . Memory (MB): peak = 1635.457 ; gain = 200.887
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-103.708| TNS=-21860.324| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 16.1 Delay CleanUp | Checksum: 2214b7e5e
+
+Time (s): cpu = 00:08:11 ; elapsed = 00:05:28 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 16.2 Clock Skew Optimization
+Phase 16.2 Clock Skew Optimization | Checksum: 2214b7e5e
+
+Time (s): cpu = 00:08:11 ; elapsed = 00:05:28 . Memory (MB): peak = 1635.457 ; gain = 200.887
+Phase 16 Delay and Skew Optimization | Checksum: 2214b7e5e
+
+Time (s): cpu = 00:08:11 ; elapsed = 00:05:28 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 17 Post Hold Fix
+
+Phase 17.1 Hold Fix Iter
+
+Phase 17.1.1 Update Timing
+Phase 17.1.1 Update Timing | Checksum: 18c2eb150
+
+Time (s): cpu = 00:08:12 ; elapsed = 00:05:29 . Memory (MB): peak = 1635.457 ; gain = 200.887
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-103.693| TNS=-21759.496| WHS=0.050  | THS=0.000  |
+
+Phase 17.1 Hold Fix Iter | Checksum: 18c2eb150
+
+Time (s): cpu = 00:08:12 ; elapsed = 00:05:29 . Memory (MB): peak = 1635.457 ; gain = 200.887
+Phase 17 Post Hold Fix | Checksum: 18c2eb150
+
+Time (s): cpu = 00:08:12 ; elapsed = 00:05:29 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 18 Timing Verification
+
+Phase 18.1 Update Timing
+Phase 18.1 Update Timing | Checksum: 215275cac
+
+Time (s): cpu = 00:08:15 ; elapsed = 00:05:31 . Memory (MB): peak = 1635.457 ; gain = 200.887
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-103.693| TNS=-21759.496| WHS=N/A    | THS=N/A    |
+
+Phase 18 Timing Verification | Checksum: 215275cac
+
+Time (s): cpu = 00:08:15 ; elapsed = 00:05:31 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 19 Reset Design
+INFO: [Route 35-307] 15394 nets already restored were skipped.
+Post Restoration Checksum: NetGraph: 1aa55fd3 NumContArr: ad574ac1 Constraints: 0 Timing: 6882a334
+Phase 19 Reset Design | Checksum: 1307f4dc8
+
+Time (s): cpu = 00:08:18 ; elapsed = 00:05:32 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Phase 20 Post Router Timing
+INFO: [Route 35-62] Timer settings changed to match sign-off timing analysis. Setup and Hold analysis on slow, fast Corners with nearest common node skew is enabled.
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=-101.583| TNS=-21549.225| WHS=0.055  | THS=0.000  |
+
+WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
+INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
+Phase 20 Post Router Timing | Checksum: db6638ad
+
+Time (s): cpu = 00:08:25 ; elapsed = 00:05:36 . Memory (MB): peak = 1635.457 ; gain = 200.887
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:08:25 ; elapsed = 00:05:36 . Memory (MB): peak = 1635.457 ; gain = 200.887
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+107 Infos, 202 Warnings, 2 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:08:29 ; elapsed = 00:05:39 . Memory (MB): peak = 1635.457 ; gain = 208.164
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1635.457 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1635.457 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:02 . Memory (MB): peak = 1635.457 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file drone_wrapper_drc_routed.rpt -pb drone_wrapper_drc_routed.pb -rpx drone_wrapper_drc_routed.rpx
+Command: report_drc -file drone_wrapper_drc_routed.rpt -pb drone_wrapper_drc_routed.pb -rpx drone_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file drone_wrapper_methodology_drc_routed.rpt -pb drone_wrapper_methodology_drc_routed.pb -rpx drone_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file drone_wrapper_methodology_drc_routed.rpt -pb drone_wrapper_methodology_drc_routed.pb -rpx drone_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:13 ; elapsed = 00:00:08 . Memory (MB): peak = 1635.457 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_power -file drone_wrapper_power_routed.rpt -pb drone_wrapper_power_summary_routed.pb -rpx drone_wrapper_power_routed.rpx
+Command: report_power -file drone_wrapper_power_routed.rpt -pb drone_wrapper_power_summary_routed.pb -rpx drone_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+119 Infos, 203 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file drone_wrapper_route_status.rpt -pb drone_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file drone_wrapper_timing_summary_routed.rpt -pb drone_wrapper_timing_summary_routed.pb -rpx drone_wrapper_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file drone_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file drone_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file drone_wrapper_bus_skew_routed.rpt -pb drone_wrapper_bus_skew_routed.pb -rpx drone_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: phys_opt_design -directive AddRetime
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: AddRetime
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1650.523 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-101.583 | TNS=-21549.218 | WHS=0.055 | THS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 23afb72d0
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 1655.742 ; gain = 5.219
+WARNING: [Physopt 32-745] Physical Optimization has determined that the magnitude of the negative slack is too large and it is highly unlikely that slack will be improved. Post-Route Physical Optimization is most effective when WNS is above -0.5ns
+
+Phase 2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-101.583 | TNS=-21549.218 | WHS=0.055 | THS=0.000 |
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/o_s4.
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-703] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq[30]. Clock skew was adjusted for instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq_reg[30].
+INFO: [Physopt 32-952] Improved path group WNS = -101.579. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq[30].
+INFO: [Physopt 32-703] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq[25]. Clock skew was adjusted for instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq_reg[25].
+INFO: [Physopt 32-952] Improved path group WNS = -101.530. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq[25].
+INFO: [Physopt 32-703] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq[27]. Clock skew was adjusted for instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq_reg[27].
+INFO: [Physopt 32-952] Improved path group WNS = -101.403. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq[27].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq[28].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/o_s4_reg_i_4_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/o_s4_i_26_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/o_s4_reg_i_54_n_5.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_8_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_8_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_8_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.370. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_29_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_16_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_16_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_16_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.341. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_51_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_74_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_74_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_74_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.316. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_15_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_15_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_15_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.242. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_50_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -101.223. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_14_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_74_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_74_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -101.193. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_repN.
+INFO: [Physopt 32-952] Improved path group WNS = -101.181. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_11_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_4_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_4_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_4_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.157. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_11_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_11_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_11_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.158. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_14_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_14_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_14_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.140. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_72_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_72_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_72_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.084. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_12_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_12_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_12_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.018. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_31_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_31_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_31_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -101.015. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_5_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_INST_0
+INFO: [Physopt 32-952] Improved path group WNS = -100.981. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_12_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_12_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -100.959. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_repN_5.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_34_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -100.957. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_4_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_4_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -100.939. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_repN_1.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_33_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_33_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_33_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.931. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_39_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[30].q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_INST_0_i_44_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[4].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[4]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_137_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.841. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_INST_0_i_28_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[16].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[16]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_48_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.767. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_INST_0_i_18_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[19].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[19]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_INST_0_i_34_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.752. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_INST_0_i_10_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[26].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[26]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_24_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.733. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_26_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_26_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_26_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.719. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[1]_INST_0_i_19_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].d[18].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2].
+INFO: [Physopt 32-952] Improved path group WNS = -100.718. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[29].q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_12_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_12_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_12_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.673. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[20].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_15_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[23].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[23]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_36_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.653. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_57_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[4].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[4]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_78_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.595. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[5].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[5]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_77_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.559. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_16_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_16_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_16_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.541. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[20].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_6_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_6_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.510. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[30].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_8_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_23_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_23_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_23_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.480. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_43_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_43_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_43_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.312. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[27].d[10].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_4_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_4_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_4_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.262. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_19_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_12_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_12_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -100.262. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[20]_repN.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_25_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_25_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[3]_INST_0_i_25_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.248. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[27].d[12].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[28].d[20]_repN_2.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[2]_INST_0_i_38_n_6.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[27].d[18].
+INFO: [Physopt 32-952] Improved path group WNS = -100.224. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[0]_INST_0_i_209_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[27].d[6].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[27].q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_26_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_26_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_26_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.179. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[15].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_21_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_21_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_21_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.168. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[17].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_22_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_22_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_22_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.151. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[15].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_8_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_8_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_8_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.139. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_29_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_10_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_10_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_10_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.120. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[22].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_47_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[7].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[7]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_77_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.114. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_11_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_11_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_11_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.098. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_33_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_45_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_45_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_45_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.087. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[11].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_9_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_9_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_9_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.061. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_30_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_42_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_42_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_42_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.059. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[9].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_27_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_27_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_27_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.034. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[13].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_23_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_23_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_23_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.014. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[13].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_46_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_46_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[4]_INST_0_i_46_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -100.006. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[9].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].d[6].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[26].q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_6_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[25].d[30].  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_17
+INFO: [Physopt 32-952] Improved path group WNS = -99.967. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[25].d[30].
+INFO: [Physopt 32-952] Improved path group WNS = -99.962. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_11_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_11_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_11_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_11_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.758. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_34_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_23_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_23_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_23_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.737. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[25].d[14].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_22_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_22_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_22_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.726. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[25].d[16].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_45_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[25].d[8].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[25].q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_19_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_19_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_19_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.722. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[21].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_49_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[9]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_75_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.660. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_43_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -99.653. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[13].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_22_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[15].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[15]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_57_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.598. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_6_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_6_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.576. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_27_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_7_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_29_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_29_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_29_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.548. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_21_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[17].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[17]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_54_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.531. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_8_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_8_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_8_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.523. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_30_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[13].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[13]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[5]_INST_0_i_53_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.500. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_4_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[30].  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[6]_INST_0_i_17
+INFO: [Physopt 32-952] Improved path group WNS = -99.491. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[30].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].d[8].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[24].q0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_44_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[23].d[10].  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_67
+INFO: [Physopt 32-952] Improved path group WNS = -99.491. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[23].d[10].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[23].d[10].
+INFO: [Common 17-14] Message 'Physopt 32-953' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[23].d[10]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_67_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -99.408. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8].
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_39_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_39
+INFO: [Physopt 32-952] Improved path group WNS = -99.405. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_39_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_38_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_38
+INFO: [Physopt 32-952] Improved path group WNS = -99.337. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_38_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_20_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_20
+INFO: [Physopt 32-952] Improved path group WNS = -99.313. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_20_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_39_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_39
+INFO: [Physopt 32-952] Improved path group WNS = -99.250. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_39_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_19_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_19
+INFO: [Physopt 32-952] Improved path group WNS = -99.113. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_19_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_20_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_20
+INFO: [Physopt 32-952] Improved path group WNS = -98.969. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_20_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_39_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_39_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.959. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8].
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8].  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0
+INFO: [Physopt 32-952] Improved path group WNS = -98.381. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_5_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_5_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.273. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_24_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_14_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_14_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.193. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[22].d[18].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[22].d[11]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_60_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.188. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[22].d[29]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_22_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.146. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_33_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_33_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.125. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[22].d[13].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_28_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_28_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.092. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_80_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_80_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.082. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_15_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_15_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.072. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_9_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_9_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.046. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_24_n_0.
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_25_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_25
+INFO: [Physopt 32-952] Improved path group WNS = -98.045. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_25_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_27_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_27_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.031. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_29_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_29_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -98.028. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[22].d[13].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_6_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -97.986. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_21_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_21_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -97.973. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_18_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_18_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -97.913. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[22].d[18].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_29_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_29_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -97.907. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_31_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_31
+INFO: [Physopt 32-952] Improved path group WNS = -97.902. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[7]_INST_0_i_31_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_14_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[8]_INST_0_i_14_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -97.891. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[9].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_29_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_29_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -97.701. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_61_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_12_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_12_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -97.657. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[20].d[21].
+INFO: [Physopt 32-663] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_62_n_0.  Re-placed instance drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_62
+INFO: [Physopt 32-952] Improved path group WNS = -97.558. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_62_n_0.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_13_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_13_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -97.554. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[19].d[20].
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[19].d[26]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[10]_INST_0_i_22_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -97.535. Path group: clk_fpga_0. Processed net: drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[12].
+INFO: [Common 17-14] Message 'Physopt 32-952' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_26_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_26_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_66_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_66_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_5_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_5_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_45_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_45_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_24_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[11]_INST_0_i_24_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[17].d[18]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_51_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[12]_INST_0_i_72_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[12]_INST_0_i_72_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[17].d[16]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_54_comp_1.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[12]_INST_0_i_36_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[12]_INST_0_i_36_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[12]_INST_0_i_12_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[12]_INST_0_i_12_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_53_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_53_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_32_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_32_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_55_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_55_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_11_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_11_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_11_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[13]_INST_0_i_11_comp_1.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[15].d[18]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[15]_INST_0_i_48_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[15]_INST_0_i_45_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[15]_INST_0_i_45_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[15]_INST_0_i_42_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[15]_INST_0_i_42_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[16]_INST_0_i_12_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[16]_INST_0_i_12_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[16]_INST_0_i_6_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[16]_INST_0_i_6_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/gen_div[13].d[20]. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[17]_INST_0_i_33_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[17]_INST_0_i_13_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[17]_INST_0_i_13_comp.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[17]_INST_0_i_13_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[17]_INST_0_i_13_comp_1.
+INFO: [Physopt 32-710] Processed net drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[17]_INST_0_i_31_n_0. Critial path length was reduced through logic transformation on cell drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_Devidor/quo[17]_INST_0_i_31_comp.
+INFO: [Common 17-14] Message 'Physopt 32-710' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-95.998 | TNS=-20466.041 | WHS=0.050 | THS=0.000 |
+Phase 2 Critical Path Optimization | Checksum: 23afb72d0
+
+Time (s): cpu = 00:11:20 ; elapsed = 00:09:11 . Memory (MB): peak = 1790.039 ; gain = 139.516
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1790.039 ; gain = 0.000
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=-95.998 | TNS=-20466.041 | WHS=0.050 | THS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Critical Path  |          5.585  |       1083.177  |            0  |              0  |                   126  |           0  |           1  |  00:09:06  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1790.039 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 23afb72d0
+
+Time (s): cpu = 00:11:20 ; elapsed = 00:09:11 . Memory (MB): peak = 1790.039 ; gain = 139.516
+INFO: [Common 17-83] Releasing license: Implementation
+459 Infos, 304 Warnings, 2 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:11:21 ; elapsed = 00:09:12 . Memory (MB): peak = 1790.039 ; gain = 139.516
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1790.039 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1790.039 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1790.039 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/impl_1/drone_wrapper_postroute_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 1790.039 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file drone_wrapper_timing_summary_postroute_physopted.rpt -pb drone_wrapper_timing_summary_postroute_physopted.pb -rpx drone_wrapper_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+report_timing_summary: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 1790.039 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file drone_wrapper_bus_skew_postroute_physopted.rpt -pb drone_wrapper_bus_skew_postroute_physopted.pb -rpx drone_wrapper_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: write_bitstream -force drone_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+WARNING: [Designutils 20-3303] unexpected site type 'IOPAD' in HDPYFinalizeIO
+INFO: [Common 17-14] Message 'Designutils 20-3303' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__0 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__0 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__1 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__1 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/difference_reg__0 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/difference_reg__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/difference_reg__0 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/difference_reg__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/difference_reg__0 input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/difference_reg__0/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/unamedDSP input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/unamedDSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/unamedDSP input drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/unamedDSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1 output drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__0 output drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__1 output drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/unamedDSP output drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/unamedDSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1 multiplier stage drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__0 multiplier stage drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__1 multiplier stage drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_FrequencyTrackerII/o_freq1__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/difference_reg__0 multiplier stage drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/difference_reg__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/unamedDSP multiplier stage drone_i/SWIPT_2020_0/inst/SWIPT_2020_v1_0_S00_AXI_inst/swipt_toplevel_inst/inst_PwmIII/unamedDSP/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PLBUFGOPT-1] Non-Optimal connections to BUFG: A non-muxed BUFG drone_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG is driven by another global buffer drone_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG_replica. Remove non-muxed BUFG if it is not desired
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./drone_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+477 Infos, 425 Warnings, 3 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:37 ; elapsed = 00:00:28 . Memory (MB): peak = 2092.176 ; gain = 302.137
+INFO: [Common 17-206] Exiting Vivado at Mon May 17 11:53:51 2021...

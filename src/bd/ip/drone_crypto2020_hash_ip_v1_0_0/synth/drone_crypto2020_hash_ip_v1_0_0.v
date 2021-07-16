@@ -50,7 +50,7 @@
 // IP VLNV: user.org:user:crypto2020_hash_ip_v1:1.0
 // IP Revision: 8
 
-(* X_CORE_INFO = "crypto2020_hash_ip_v1_v1_0,Vivado 2018.2" *)
+(* X_CORE_INFO = "crypto2020_hash_ip_v1_v1_0,Vivado 2018.3" *)
 (* CHECK_LICENSE_TYPE = "drone_crypto2020_hash_ip_v1_0_0,crypto2020_hash_ip_v1_v1_0,{}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module drone_crypto2020_hash_ip_v1_0_0 (

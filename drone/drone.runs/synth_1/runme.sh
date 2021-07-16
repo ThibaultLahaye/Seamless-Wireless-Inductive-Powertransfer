@@ -6,21 +6,25 @@
 # Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/esat/micas-data/software/xilinx_vivado_2018.2/SDK/2018.2/bin:/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/ids_lite/ISE/bin/lin64:/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/bin
+  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin
 else
-  PATH=/esat/micas-data/software/xilinx_vivado_2018.2/SDK/2018.2/bin:/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/ids_lite/ISE/bin/lin64:/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/bin:$PATH
+  PATH=C:/Xilinx/SDK/2018.3/bin;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.3/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/ids_lite/ISE/lib/lin64
+  LD_LIBRARY_PATH=
 else
-  LD_LIBRARY_PATH=/esat/micas-data/software/xilinx_vivado_2018.2/Vivado/2018.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1'
+HD_PWD='C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

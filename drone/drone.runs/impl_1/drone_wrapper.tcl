@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -68,21 +67,21 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param xicom.use_bs_reader 1
   create_project -in_memory -part xc7z010clg400-1
-  set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /users/students/r0713047/Eagle/Eagle7/drone/drone.cache/wt [current_project]
-  set_property parent.project_path /users/students/r0713047/Eagle/Eagle7/drone/drone.xpr [current_project]
-  set_property ip_repo_paths /users/students/r0713047/Eagle/Eagle7/IP_Repo [current_project]
-  set_property ip_output_repo /users/students/r0713047/Eagle/Eagle7/drone/drone.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.xpr [current_project]
+  set_property ip_repo_paths C:/Users/Thiba/OneDrive/Desktop/Eagle7/IP_Repo [current_project]
+  update_ip_catalog
+  set_property ip_output_repo C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet /users/students/r0713047/Eagle/Eagle7/drone/drone.runs/synth_1/drone_wrapper.dcp
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  add_files -quiet C:/Users/Thiba/OneDrive/Desktop/Eagle7/drone/drone.runs/synth_1/drone_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /users/students/r0713047/Eagle/Eagle7/src/bd/drone.bd
+  add_files C:/Users/Thiba/OneDrive/Desktop/Eagle7/src/bd/drone.bd
   set_param project.isImplRun false
-  read_xdc /users/students/r0713047/Eagle/Eagle7/constraints/ZYBO_Master_2018.xdc
+  read_xdc C:/Users/Thiba/OneDrive/Desktop/Eagle7/constraints/ZYBO_Master_2018.xdc
   set_param project.isImplRun true
   link_design -top drone_wrapper -part xc7z010clg400-1
   set_param project.isImplRun false
@@ -165,12 +164,16 @@ if {$rc} {
 start_step post_route_phys_opt_design
 set ACTIVE_STEP post_route_phys_opt_design
 set rc [catch {
+  set tool_flow [get_property TOOL_FLOW [current_project]]
+  if {$tool_flow eq {SDx}} {send_msg_id {101-1} {status} {Starting optional post-route physical design optimization.} }
   create_msg_db post_route_phys_opt_design.pb
   phys_opt_design -directive AddRetime
   write_checkpoint -force drone_wrapper_postroute_physopt.dcp
   create_report "impl_1_post_route_phys_opt_report_timing_summary_0" "report_timing_summary -max_paths 10 -warn_on_violation -file drone_wrapper_timing_summary_postroute_physopted.rpt -pb drone_wrapper_timing_summary_postroute_physopted.pb -rpx drone_wrapper_timing_summary_postroute_physopted.rpx"
   create_report "impl_1_post_route_phys_opt_report_bus_skew_0" "report_bus_skew -warn_on_violation -file drone_wrapper_bus_skew_postroute_physopted.rpt -pb drone_wrapper_bus_skew_postroute_physopted.pb -rpx drone_wrapper_bus_skew_postroute_physopted.rpx"
   close_msg_db -file post_route_phys_opt_design.pb
+  set tool_flow [get_property TOOL_FLOW [current_project]]
+  if {$tool_flow eq {SDx}} {send_msg_id {101-1} {status} {Finished optional post-route physical design optimization.} }
 } RESULT]
 if {$rc} {
   step_failed post_route_phys_opt_design
@@ -184,7 +187,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
   catch { write_mem_info -force drone_wrapper.mmi }
   write_bitstream -force drone_wrapper.bit 
   catch { write_sysdef -hwdef drone_wrapper.hwdef -bitfile drone_wrapper.bit -meminfo drone_wrapper.mmi -file drone_wrapper.sysdef }

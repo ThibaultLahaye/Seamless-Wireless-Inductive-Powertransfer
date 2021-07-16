@@ -98,7 +98,7 @@ ARCHITECTURE drone_kill_switch_0_0_arch OF drone_kill_switch_0_0 IS
     );
   END COMPONENT kill_switch;
   ATTRIBUTE X_CORE_INFO : STRING;
-  ATTRIBUTE X_CORE_INFO OF drone_kill_switch_0_0_arch: ARCHITECTURE IS "kill_switch,Vivado 2018.2";
+  ATTRIBUTE X_CORE_INFO OF drone_kill_switch_0_0_arch: ARCHITECTURE IS "kill_switch,Vivado 2018.3";
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF drone_kill_switch_0_0_arch : ARCHITECTURE IS "drone_kill_switch_0_0,kill_switch,{}";
 BEGIN

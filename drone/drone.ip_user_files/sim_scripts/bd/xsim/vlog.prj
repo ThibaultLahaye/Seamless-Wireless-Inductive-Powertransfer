@@ -1,4 +1,4 @@
-verilog xil_defaultlib --include "../../../../../src/bd/ipshared/ec67/hdl" --include "../../../../../src/bd/ipshared/5bb9/hdl/verilog" --include "../../../../../src/bd/ipshared/70fd/hdl" \
+verilog xil_defaultlib --include "../../../../../src/bd/ipshared/ec67/hdl" --include "../../../../../src/bd/ipshared/70cf/hdl" --include "../../../../../src/bd/ip/drone_processing_system7_0_0" \
 "../../../../../src/bd/ip/drone_processing_system7_0_0/sim/drone_processing_system7_0_0.v" \
 "../../../../../src/bd/ipshared/903d/hdl/TDP_bram.v" \
 "../../../../../src/bd/ipshared/903d/hdl/keccakF400Permutation.v" \
@@ -8,25 +8,26 @@ verilog xil_defaultlib --include "../../../../../src/bd/ipshared/ec67/hdl" --inc
 "../../../../../src/bd/ipshared/903d/hdl/crypto2020_hash_ip_v1_v1_0.v" \
 "../../../../../src/bd/ip/drone_crypto2020_hash_ip_v1_0_0/sim/drone_crypto2020_hash_ip_v1_0_0.v" \
 "../../../../../src/bd/ip/drone_xadc_wiz_0_0/drone_xadc_wiz_0_0.v" \
-"../../../../../src/bd/ipshared/8942/hdl/SWIPT_2020_v1_0_S00_AXI.v" \
-"../../../../../src/bd/ipshared/8942/swipt_toplevel.v" \
-"../../../../../src/bd/ipshared/8942/hdl/Pwm.v" \
-"../../../../../src/bd/ipshared/8942/hdl/EnvelopeFollower.v" \
-"../../../../../src/bd/ipshared/8942/hdl/FrequencyTrackerII.v" \
-"../../../../../src/bd/ipshared/8942/hdl/SWIPT_2020_v1_0.v" \
+"../../../../../src/bd/ipshared/1549/hdl/Boxcar.v" \
+"../../../../../src/bd/ipshared/1549/hdl/Devidor.v" \
+"../../../../../src/bd/ipshared/1549/hdl/FrequencyTrackerII.v" \
+"../../../../../src/bd/ipshared/1549/hdl/PwmIII.v" \
+"../../../../../src/bd/ipshared/1549/hdl/SWIPT_2020_v1_0_S00_AXI.v" \
+"../../../../../src/bd/ipshared/1549/swipt_toplevel.v" \
+"../../../../../src/bd/ipshared/1549/hdl/SWIPT_2020_v1_0.v" \
 "../../../../../src/bd/ip/drone_SWIPT_2020_0_0/sim/drone_SWIPT_2020_0_0.v" \
 "../../../../../src/bd/ip/drone_xbar_0/sim/drone_xbar_0.v" \
 "../../../../../src/bd/sim/drone.v" \
-"../../../../../src/bd/ip/drone_auto_pc_8/sim/drone_auto_pc_8.v" \
-"../../../../../src/bd/ip/drone_auto_pc_7/sim/drone_auto_pc_7.v" \
-"../../../../../src/bd/ip/drone_auto_pc_6/sim/drone_auto_pc_6.v" \
-"../../../../../src/bd/ip/drone_auto_pc_5/sim/drone_auto_pc_5.v" \
-"../../../../../src/bd/ip/drone_auto_pc_4/sim/drone_auto_pc_4.v" \
-"../../../../../src/bd/ip/drone_auto_pc_3/sim/drone_auto_pc_3.v" \
-"../../../../../src/bd/ip/drone_auto_pc_2/sim/drone_auto_pc_2.v" \
-"../../../../../src/bd/ip/drone_auto_pc_1/sim/drone_auto_pc_1.v" \
-"../../../../../src/bd/ip/drone_auto_pc_0/sim/drone_auto_pc_0.v" \
 "../../../../../src/bd/ip/drone_auto_pc_9/sim/drone_auto_pc_9.v" \
+"../../../../../src/bd/ip/drone_auto_pc_0/sim/drone_auto_pc_0.v" \
+"../../../../../src/bd/ip/drone_auto_pc_1/sim/drone_auto_pc_1.v" \
+"../../../../../src/bd/ip/drone_auto_pc_2/sim/drone_auto_pc_2.v" \
+"../../../../../src/bd/ip/drone_auto_pc_3/sim/drone_auto_pc_3.v" \
+"../../../../../src/bd/ip/drone_auto_pc_4/sim/drone_auto_pc_4.v" \
+"../../../../../src/bd/ip/drone_auto_pc_5/sim/drone_auto_pc_5.v" \
+"../../../../../src/bd/ip/drone_auto_pc_6/sim/drone_auto_pc_6.v" \
+"../../../../../src/bd/ip/drone_auto_pc_7/sim/drone_auto_pc_7.v" \
+"../../../../../src/bd/ip/drone_auto_pc_8/sim/drone_auto_pc_8.v" \
 
 verilog xil_defaultlib "glbl.v"
 

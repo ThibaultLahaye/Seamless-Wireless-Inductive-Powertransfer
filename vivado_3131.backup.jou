@@ -1,0 +1,1306 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May 13 10:22:28 2021
+# Process ID: 3131
+# Current directory: /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7
+# Command line: vivado
+# Log file: /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/vivado.log
+# Journal file: /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+reset_run impl_1 -prev_step 
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 117 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 118 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 119 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 120 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 121 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 122 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 123 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 124 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 125 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 126 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 127 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 128 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 129 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 130 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 131 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 132 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 133 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 134 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 135 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 136 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+update_ip_catalog -rebuild -scan_changes
+report_ip_status -name ip_status
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 137 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+report_ip_status -name ip_status 
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 138 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 139 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 140 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 141 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 142 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 143 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 144 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+close_project
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::add_file hdl/Devidor.v [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]
+set_property type verilogSource [ipx::get_files hdl/Devidor.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files hdl/Devidor.v -of_objects [ipx::get_file_groups xilinx_verilogsynthesis -of_objects [ipx::current_core]]]
+ipx::add_file hdl/Devidor.v [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]
+set_property type verilogSource [ipx::get_files hdl/Devidor.v -of_objects [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]]
+set_property library_name xil_defaultlib [ipx::get_files hdl/Devidor.v -of_objects [ipx::get_file_groups xilinx_verilogbehavioralsimulation -of_objects [ipx::current_core]]]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 145 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 146 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 147 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 148 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property core_revision 149 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+current_project drone
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+current_project SWIPT_2020_v1_0_project
+ipx::merge_project_changes files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 150 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+report_ip_status -name ip_status 
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+ipx::merge_project_changes files [ipx::current_core]
+set_property core_revision 151 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+open_bd_design {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd}
+ipx::edit_ip_in_project -upgrade true -name SWIPT_2020_v1_0_project -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.tmp/SWIPT_2020_v1_0_project /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo/SWIPT_2020_1.0/component.xml
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.runs/impl_1/drone_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+ipx::merge_project_changes files [ipx::current_core]
+ipx::merge_project_changes hdl_parameters [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+set_property core_revision 152 [ipx::current_core]
+ipx::update_source_project_archive -component [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+ipx::move_temp_component_back -component [ipx::current_core]
+close_project -delete
+update_ip_catalog -rebuild -repo_path /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/IP_Repo
+report_ip_status -name ip_status 
+upgrade_ip -vlnv user.org:user:SWIPT_2020:1.0 [get_ips  drone_SWIPT_2020_0_0] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips drone_SWIPT_2020_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd]
+export_ip_user_files -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/src/bd/drone.bd] -directory /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/sim_scripts -ip_user_files_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files -ipstatic_source_dir /users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.ip_user_files/ipstatic -lib_map_path [list {modelsim=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/modelsim} {questa=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/questa} {ies=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/ies} {xcelium=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/xcelium} {vcs=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/vcs} {riviera=/users/students/r0713047/Eagle/EAGLE-students/SWIPT/Eagle7/drone/drone.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+report_ip_status -name ip_status 
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
